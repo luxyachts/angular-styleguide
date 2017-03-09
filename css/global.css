@@ -1,6 +1,10 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 p {
     line-height:1.6;
     font-weight:500;
@@ -1299,3 +1303,248 @@ span .resumeLine {
 }
 
 /*6 columns*/
+
+
+
+
+/*******************************************
+NAVIGATION STYLES
+/*******************************************/
+.navbar {
+    height: 60px;
+    background-color: #fff;
+    margin-top: -1px;
+    margin-bottom: 0px !important;
+    border: none !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+    z-index: 999;
+} 
+.navbar-header .nav-button,
+.open-nav button:focus{
+    outline:none;
+}
+.navbar-brand {
+    height: 60px;
+}
+.navbar-brand img {
+    margin-top: -5px;
+}
+.navbar h5 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.navbar h5 i {
+    margin-right:10px;
+    color: #484848;
+    opacity: .5;
+}
+.navbar-header .nav-button {
+    float: right;
+    height: 60px;
+    min-width: 60px;
+    position: relative;
+    border-left: 1px solid #e3e3e3;
+    background: #fff;
+    margin-top: -1px;
+    font-weight: 500;
+}
+.nav-links button {
+    height: 59px;
+    min-width:60px;
+    border: none;
+    border-left: 1px solid #e3e3e3; 
+    margin: 0;
+    width: auto;
+    padding: 0px 20px;
+}
+.nav-button .fa {
+    color: #0372bc; 
+}
+.nav-links button .fa{
+    color: #0372bc; 
+}
+.nav-links button:hover {
+    background:#F5F8FA;
+}
+.nav-links button:active{
+    color:#fff;
+    background: #0372bc; 
+    height:60px;
+}
+.nav-links button:active .fa{
+    color:#fff;
+}
+.nav-links button:active h5,
+.nav-links button:active h6{
+    color:#fff !important;
+}
+.navbar-header {
+    float: none;
+    max-width:1620px;
+    margin:auto;
+}
+.nav-badge {
+    height: 60px;
+    border-radius: 0px;
+}
+.nav-badge .horz-badge{
+    margin-right:10px;
+    margin-top:16px;
+}
+.horz-badge {
+    width: 50px;
+    height: 25px;
+    float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 2px;
+    color: #0733bb;
+    vertical-align: middle;
+    padding-left: 5px;
+    text-align: left;
+    background: #fff;
+    border: 1px solid #d3e0e9;
+}
+.horz-badge:hover {
+    /*border:1px solid #0372BC;
+    z-index:9999;*/
+    background:#F5F8FA;
+    cursor:pointer;
+}
+.horz-badge-ep-style {
+    margin-left: -1px;
+    width: 14px;
+    height: 12px;
+}
+.horz-badge-dept-style {
+    margin-left: 1px;
+    height: 12px;
+}
+.badge-active {
+    border:1px solid #0372BC;
+}
+/*OPEN NAV*/ 
+.open-search-wrapper {
+    float: none;
+    max-width: 1620px;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+}
+.open-nav-wrapper {
+    float: none;
+    max-width: 1620px;
+    margin: auto;
+    z-index: 9999;
+    position:relative;
+}
+.open-nav {
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top:60px;
+    z-index: 9999;
+}  
+.open-nav-title {
+    display:none;
+}
+.open-nav-title .nav-user {
+    border: none;
+    background: #fff;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.nav-user {
+    width: 280px;
+    height: 60px;
+    float: right;
+}
+.nav-user .vert-epi:hover {
+    border: 1px solid #0372BC;
+    cursor:pointer;
+}
+.open-search-title {
+    width:400px;
+    height:60px;
+}
+.open-nav-close .fa {
+    float: right;
+    margin-top: 15px;
+    margin-right: 18px;
+    color: #fff;
+}
+.open-nav-close {
+    background:#0372BC;
+    height:60px;
+    width:60px;
+    float:right;
+}
+.open-nav-close:hover {
+    background:#09568A;
+    cursor: pointer;
+}
+.nav-open {
+    width:100%;
+    height:42px;
+    font-size:14px;
+    font-weight:400;
+    padding:10px 20px;
+    position: relative; 
+}
+.nav-open .fa{
+    margin-right:10px;
+    opacity: .5;
+    width:12px
+}
+.nav-blue {
+    background:#0372BC;
+    color:#fff;
+    border-left:1px solid #0372BC;
+    border-right:1px solid #0372BC;
+} 
+.nav-blue:hover {
+    background:#09568A;
+} 
+.nav-gray {
+    background:#F5F8FA;
+    color:#0372BC;
+    border-left:1px solid #D3E0E9;
+    border-right:1px solid #D3E0E9;
+} 
+.nav-gray:hover {
+    background:#E7EEF3;
+} 
+.nav-white {
+    background:#FFF;
+    color:#0372BC;
+    border-left:1px solid #D3E0E9;
+    border-right:1px solid #D3E0E9;
+} 
+.nav-white:hover {
+    background:#E7EEF3;
+} 
+.nav-link-wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    cursor: pointer;
+}   
+.mobile-nav-user {
+    border:none;
+    background:#fff;
+    height:60px;
+    padding-left:14px;
+    max-width:260px;
+    border-left:1px solid #D3E0E9;
+}
+/*
+.nav-avatar .fa{
+color:#0372BC;
+}
+*/
+.width-60 {
+    width:60px !important;
