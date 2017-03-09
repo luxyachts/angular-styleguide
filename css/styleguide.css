@@ -325,7 +325,7 @@ FOOTER STYLES
 }
 .footer ul li {
     color: #fff;
-    line-height: 1.6;
+    line-height: 1.2;
     list-style-type: none !important;
 }
 .footer li a {
@@ -390,7 +390,6 @@ FOOTER STYLES
 }
 .footerLegal a {
     margin-right:20px;
-    text-decoration:none;
     color:#fff;
 }
 .connect-push {
