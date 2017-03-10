@@ -654,38 +654,6 @@ ASSET BARS
     margin-top: 19px;
 }
 
-
-/*STATUS*/
-.status-icon {
-    height:26px;
-    width:26px;
-    border-radius:13px;
-    color:#fff;
-}
-.status-pending {
-    background:#9B9B9B;
-    padding:2px 5px 0px 5px;
-}
-.status-progress {
-    border:2px solid #0372BC;
-}
-.progress-bottom {
-    height:13px;
-    width:26px;
-    background: #0372BC;
-    margin-left:-2px;
-    margin-top:11px;
-    border-bottom-left-radius: 13px;
-    border-bottom-right-radius: 13px;
-}
-.status-complete {
-    background:#2DA94F;
-    padding:3px 3px;
-}
-.status-alert {
-    background:#D0021B;
-    padding:2px 5px;
-}
 /*CHIPS*/
 .user-badge {
     width:300px;
