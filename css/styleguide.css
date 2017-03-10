@@ -7,6 +7,9 @@ body {
 .m-b-24 {
     margin-bottom:24px;
 }
+.m-t-20 {
+    margin-top:20px;
+}
 html {
     overflow-x:hidden;
 }
@@ -489,4 +492,10 @@ FOOTER STYLES
     .footerSocial a {
         margin: 0px 5px; 
     }
+}
+
+
+.solid-background {
+    background:#0372BC;
+    padding:20px;
 }
