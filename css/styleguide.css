@@ -498,4 +498,14 @@ FOOTER STYLES
 .solid-background {
     background:#0372BC;
     padding:20px;
+   
+}
+
+.grid-callout {
+    height:40px;
+    background:#F5F8FA;
+    border:1px solid #D3E0E9;
+    text-align: center;
+    padding-top:8px;
+    color:#888888;
 }
