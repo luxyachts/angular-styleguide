@@ -49,8 +49,9 @@
                 </ol>
             <li><h4><a href="#modules">Modules</a></h4></li>
                 <ol>
-                    <li>Headline Treatments</li>
-                    <li>Info Cards</li>
+                    <li><a href="#infocards">Info Cards</a></li>
+                    <li><a href="#headlines">Headline Treatments</a></li>
+                    <li><a href="#pagetitles">Page Titles</a></li>
                    <!--
                     <li>User Badge</li>
                     <li>Items Selection</li>
@@ -411,12 +412,22 @@
             </section>
             <hr>
             <section><h2>Preloader</h2>
-                <div class="pre-wrapper">
-                    <div class="pre-loader">
-                        <i class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue" aria-hidden="true"></i>
-                        <h5 class="brand-headline">Page Loading</h5>
-                    </div>
-                </div>
+               <div class="row">
+                   <div class="col-md-3">
+                       <h3>Titlebar 2</h3>
+                       <p>Placeholder</p>
+                   </div>
+                   <div class="col-md-9">
+                       <div style="padding:40px 0px;background:#F5F8FA;">
+                           <div class="pre-wrapper">
+                               <div class="pre-loader">
+                                   <i class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue" aria-hidden="true"></i>
+                                   <h5 class="brand-headline">Page Loading</h5>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
             </section>
             <hr>
             <section id="careerpath">
@@ -752,17 +763,6 @@
         </div>
         <div class="col-md-1"></div>
     </div> 
-    
-        
-    <div class="row" style="margin-left:260px;" id="modules">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
-            <section>
-                <h1 class="brand-blue">Modules</h1>
-            </section>
-        </div>
-        <div class="col-md-1"></div>
-    </div> 
        
     <div class="row" style="margin-left:260px;" id="grid">
         <div class="col-md-1"></div>
@@ -885,6 +885,11 @@
                         <img src="assets/template_blank.png" class="img-responsive" style="margin-bottom:20px;border: 1px solid #D3E0E9;">
                         <a href="_templates/lux_blank_template.html" class="btn btn-primary">View Template</a>
                     </div>
+                    <div class="col-md-3">
+                        <h3>Basic Template</h3>
+                        <img src="assets/template_basic.png" class="img-responsive" style="margin-bottom:20px;border: 1px solid #D3E0E9;">
+                        <a href="_templates/lux_basic_template.html" class="btn btn-primary">View Template</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -904,15 +909,16 @@
     <div class="row" style="margin-left:260px;" id="inputs">
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;"> 
-        <section>
+        <section id="modules">
            <h1>Modules</h1>
-           <h2>Info Cards</h2>
+           <h2 id="infocards">Info Cards</h2>
            <p>Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section.<br>They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
            <hr>
            <div class="row">
                <div class="col-md-3">
                    <h3>Info Snippit</h3>
                    <p>Can be used in listing marketing items.</p>
+                   <xmp><div class="info-wrapper"><div class="info-card-text"><img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p></div></div></xmp>
                </div>
                <div class="col-md-3">
                    <div class="info-wrapper">
@@ -924,10 +930,23 @@
                    </div>
                </div>
                <div class="col-md-3">
-                   <xmp><div class="info-wrapper"><div class="info-card-text"><img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p></div></div></xmp>
+                   <div class="info-wrapper">
+                       <div class="info-card-text">
+                           <img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;">  
+                           <h4>Professional Crew Placement</h4>
+                           <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
+                       </div>
+                   </div>
                </div>
-               <div class="col-md-3"></div>
-               
+               <div class="col-md-3">
+                   <div class="info-wrapper">
+                       <div class="info-card-text">
+                           <img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;">  
+                           <h4>Professional Crew Placement</h4>
+                           <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
+                       </div>
+                   </div>
+               </div>
            </div>
            <hr>
            <div class="row">
@@ -1010,9 +1029,8 @@
                </div>
            </div>
         </section>
-        
-        <section>
-            <h1>Headline Treatments</h1>
+        <section id="headlines">
+            <h2>Headline Treatments</h2>
             <p>Text treatments have been defined so that you do not need to add padding / margin: </p>
             <hr>
             <div class="row">
@@ -1057,15 +1075,17 @@
                     <p>When placing text on colored backgrounds or images, be sure to take the headline-white styles so that the text-shadows are present and consistant with the rest of the site. In the case that text is unreadable on top of an image, find a image that works better.</p>
                 </div>
                 <div class="col-md-9">
-                   <div class="solid-background">
-                        <div class="headline-white">
-                            <h1>The Ultimate Yachting Experience</h1>
-                            <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.
-                            </p>
-                            <a class="btn btn-white">Learn More</a>
+                    <section class="hero" style="background:#0372BC;">
+                        <div class="page-wrapper">
+                            <div class="headline-white">
+                                <h1>The Ultimate Yachting Experience</h1>
+                                <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.
+                                </p>
+                                <a class="btn btn-white">Learn More</a>
+                            </div>
                         </div>
-                    </div>
-                    <xmp class="m-t-20"><div class="solid-background"><div class="headline-white"><h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-white">Learn More</a></div></div></xmp>
+                    </section>
+                    <xmp class="m-t-20"></xmp>
                 </div>
             </div>
             <hr>
@@ -1075,82 +1095,89 @@
                     <p>When placing text on colored backgrounds or images, be sure to take the headline-white styles so that the text-shadows are present and consistant with the rest of the site. In the case that text is unreadable on top of an image, find a image that works better.</p>
                 </div>
                 <div class="col-md-9">
-                    <div class="solid-background m-t-20">
-                        <div class="headline-center headline-white">
-                            <h1>The Ultimate Yachting Experience</h1>
-                            <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.
-                            </p>
-                            <a class="btn btn-white">Learn More</a>
+                    <section class="hero" style="background:#0372BC;">
+                        <div class="page-wrapper">
+                            <div class="headline-center headline-white">
+                                <h1>The Ultimate Yachting Experience</h1>
+                                <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.
+                                </p>
+                                <a class="btn btn-white">Learn More</a>
+                            </div>
+                        </div>
+                    </section>
+                    <xmp></xmp>
+                </div>
+            </div>
+        </section>
+        <section id="pagetitles">
+            <h2>Page Titles</h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Titlebar 1</h3>
+                    <p>Placeholder</p>
+                </div>
+                <div class="col-md-9">
+                    <div class="page-title">
+                        <div class="row page-wrapper">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li><a href="">Breadcrumb 1</a></li>
+                                    <li><a href="">Breadcrumb 2</a></li>
+                                    <li class="brand-text">Breadcrumb 3</li>
+                                </ul>
+                                <div class="headline">
+                                    <h1>The Ultimate Yachting Experience</h1>
+                                    <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <xmp><div class="page-title"><div class="row page-wrapper"><div class="col-md-12"><ul class="breadcrumb"><li><a href="">Breadcrumb 1</a></li><li><a href="">Breadcrumb 2</a></li><li class="brand-text">Breadcrumb 3</li></ul><div class="headline"><h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p></div></div></div></div></xmp>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>Titlebar 2</h3>
+                    <p>Placeholder</p>
+                </div>
+                <div class="col-md-9">
+                    <div class="page-title">
+                        <div class="row page-wrapper">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li><a href="">Breadcrumb 1</a></li>
+                                    <li><a href="">Breadcrumb 2</a></li>
+                                    <li class="brand-text">Breadcrumb 3</li>
+                                </ul>
+                                <div class="headline">
+                                    <h1>The Ultimate Yachting Experience</h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <xmp><div class="headline-center headline-white"> <h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-white">Learn More</a></div></xmp>
+                    <xmp><div class="page-title"><div class="row page-wrapper"><div class="col-md-12"><ul class="breadcrumb"><li><a href="">Breadcrumb 1</a></li><li><a href="">Breadcrumb 2</a></li><li class="brand-text">Breadcrumb 3</li></ul><div class="headline"><h1>The Ultimate Yachting Experience</h1></div></div></div></div></xmp>  
                 </div>
             </div>
         </section>
         </div>
-        <div class="col-md-1">
-        </div>
+        <div class="col-md-1"></div>
     </div>  
+    
+    <!-- DUPLICATE TO CREATE NEW MODULE-->
     <div class="row"  style="margin-left:260px;" id="titles">
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
-            <section>
-                <h1>Page Titles</h1>
-                <hr>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3>Titlebar 1</h3>
-                        <p>Placeholder</p>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="page-title">
-                            <div class="row page-wrapper">
-                                <div class="col-md-12">
-                                    <ul class="breadcrumb">
-                                        <li><a href="">Breadcrumb 1</a></li>
-                                        <li><a href="">Breadcrumb 2</a></li>
-                                        <li class="brand-text">Breadcrumb 3</li>
-                                    </ul>
-                                    <div class="headline">
-                                        <h1>The Ultimate Yachting Experience</h1>
-                                        <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <xmp><div class="page-title"><div class="row page-wrapper"><div class="col-md-12"><ul class="breadcrumb"><li><a href="">Breadcrumb 1</a></li><li><a href="">Breadcrumb 2</a></li><li class="brand-text">Breadcrumb 3</li></ul><div class="headline"><h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p></div></div></div></div></xmp>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3>Titlebar 2</h3>
-                        <p>Placeholder</p>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="page-title">
-                            <div class="row page-wrapper">
-                                <div class="col-md-12">
-                                    <ul class="breadcrumb">
-                                        <li><a href="">Breadcrumb 1</a></li>
-                                        <li><a href="">Breadcrumb 2</a></li>
-                                        <li class="brand-text">Breadcrumb 3</li>
-                                    </ul>
-                                    <div class="headline">
-                                        <h1>The Ultimate Yachting Experience</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <xmp><div class="page-title"><div class="row page-wrapper"><div class="col-md-12"><ul class="breadcrumb"><li><a href="">Breadcrumb 1</a></li><li><a href="">Breadcrumb 2</a></li><li class="brand-text">Breadcrumb 3</li></ul><div class="headline"><h1>The Ultimate Yachting Experience</h1></div></div></div></div></xmp>  
-                    </div>
-                </div>
-            </section>
+            <section></section>
         </div>
         <div class="col-md-1"></div>
     </div>
+    <!-- DUPLICATE TO CREATE NEW MODULE-->
 </body>
 </html>
+
+
 
 
 
