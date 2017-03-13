@@ -33,9 +33,17 @@ p {
     max-width:1620px;
     margin: 0 auto;
 }
+.btn-default {
+    border:1px solid #D3E0E9;
+    color:#484848;
+}
 .btn-active {
     background:#0372BC;
     color:#fff;
+}
+.btn-default:hover {
+    background:#F5F8FA;
+    border:1px solid #D3E0E9;
 }
 .btn-active:hover {
     background:#286090;
@@ -242,6 +250,11 @@ input {
 .status-alert {
     background:#D0021B;
     padding:2px 5px;
+}
+/*EPAULET LARGE*/
+.ep-large {
+    height:90px;
+    width:44px;
 }
 /*CAREER PATH*/
 .career-path-wrapper {
@@ -820,12 +833,14 @@ NAVIGATION STYLES
     overflow:hidden;
 }
 .info-card-image img {
-    width:100%;
-    height:auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .info-card-image-large img {
-    height:100%;
-    width:auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .info-card-text {
     padding:20px;
