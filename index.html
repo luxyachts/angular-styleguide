@@ -178,11 +178,11 @@
                
                 <h4 class="brand-headline">H4 : The quick brown fox jumps over the lazy dog</h4>
                <p class="content-title">Roboto Semibold - 16px</p>
-               <p class="m-b-40">-</p>
+               <p class="m-b-40">Used for titles on infocards, and titles or smaller sections.</p>
                
                 <h5 class="brand-headline">H5 : The quick brown fox jumps over the lazy dog</h5>
                <p class="content-title">Roboto Semibold - 14px</p>
-               <p class="m-b-40">-</p>
+               <p class="m-b-40">Currently only as titles in smaller chunnks of contne, list the career path.</p>
                
                 <h6 class="brand-headline">H6 : The quick brown fox jumps over the lazy dog</h6>
                <p class="content-title">Roboto Bold - 12px</p>
@@ -339,6 +339,22 @@
                 <a>Click Me</a>
             </section>
             <hr>
+            <section id="tooltips">
+                <h2>Tool Tips</h2>
+                <p class="p-width">Tooltips are used for adding additional information about subjects and inputs. The content within the toolip should be clear and concise.</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>Tooltip on text</h5>
+                        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Tooltip on icon</h5>
+                        <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i>
+                        <p>The tooltip icon should be used where there is not enough space in the UI to clearly explain an idea. An example of this would be next to an input.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
             <section id="breadcrumbs">
                 <h2>Breadcrumb</h2>
                 <p class="p-width">Breadcrumbs are uses throughout the interior marketing pages, letting the user know how they got to their current page, and allows them to jump back to those previous page with a single click.</p>
@@ -423,6 +439,10 @@
                 <h2>Career Path Buttons</h2>
                 <!-- TREE CONTENT DECK-->
                 <div class="row">
+                    <div class="col-md-6">
+                        <h3>About the career path</h3>
+                        <p>Careet paths are used when talking abotu specific departments. They show the user the path of their position. This is also a navigational element, that allows the user to select a position and load information pertaining to it.</p>
+                    </div>
                     <div class="col-md-6">
                     <a href="/crewpositions/srmaster">
                         <div class="career-path-wrapper">
@@ -564,13 +584,7 @@
                         </div>
                     </a>
                 </div>
-                
-                <div class="col-md-6">
-                    <h3>About the career path</h3>
-                    <p class="brand-alert">Add active states</p>
-                </div>
-            </div>  
-                      <!-- TREE CONTENT DECK-->
+            </div> <!-- TREE CONTENT DECK-->
             </section>
         </div>
         <div class="col-md-1"></div>
@@ -582,11 +596,15 @@
            <section>
                <h1 class="brand-blue">Inputs</h1>
                <p class="p-width">inputs are used throughout our crew and emplyer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
-                   <div class="row">
+                <hr>
+                    <div class="row">
                        <div class="col-md-3 m-b-24">
-                           <h5>Input</h5> 
-                           <input class="input-wrapper" placeholder="Type Here">
-                           <xmp><input class="input-wrapper" placeholder="Type Here"></xmp>
+                          <div class="lux-input">
+                               <h6>Input Title</h6> 
+                              <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i>
+                               <input class="input-wrapper" placeholder="Type Here">
+                           </div>
+                           <xmp><div class="lux-input"><h6>Input Title</h6><i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i><input class="input-wrapper" placeholder="Type Here"></div></xmp>
                        </div>
                        <div class="col-md-3 m-b-24">
                            <h5>Dropdown</h5> 
@@ -603,6 +621,7 @@
                            </div>
                            <xmp><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">Action</a></li><li><a href="#">Another action</a></li><li><a href="#">Something else here</a></li></ul></div></xmp>
                        </div>
+                       <!--
                        <div class="col-md-3 m-b-24">
                            <h5>Phone number input</h5> 
                            <div class="country-phone">
@@ -620,6 +639,7 @@
                            </div>
                            <xmp><div class="date-selector"><input class="date-left"><input class="date-middle"><input class="date-right"></div></xmp>
                        </div>
+                       -->
                    </div>
            </section>
         </div>
@@ -632,7 +652,7 @@
             <section id="fontawesome">
                <h1 class="brand-blue">Icons</h1>
                <h2>Fontawesome.com Icons</h2>
-                <p class="p-width">Font awesome is used as our primary icon source. The icons should always show in teh brand blue, unless they are on a blue background (which you can see a example of <a href="#white-icon">here</a>) or  if the icon is being used for a delete function (see trash icon below_</p>
+                <p class="p-width">Font awesome is used as our primary icon source. The icons should always show in the brand blue, unless they are on a blue background (which you can see a example of <a href="#white-icon">here</a>) or if the icon is being used for a delete function (see trash icon below.</p>
                <div class="row">
                    <div class="col-md-2">
                        <h5>Settings</h5>
@@ -971,7 +991,7 @@
             <section id="modules">
                 <h1>Modules</h1>
                 <h2 id="infocards">Info Cards</h2>
-                <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section.<br>They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
+                <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section. They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
                 <hr>
                 <div class="row">
                     <div class="col-md-3">
@@ -1268,22 +1288,22 @@
                     <div class="col-md-2">
                         <h5>16px</h5>
                         <div class="margin-16"></div>
-                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                        <p>16px margins and padding should be used for info cards.</p>
                     </div>
                     <div class="col-md-2">
                         <h5>24px</h5>
                         <div class="margin-24"></div>
-                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                        <p>-</p>
                     </div>
                     <div class="col-md-2">
                         <h5>32px</h5>
                         <div class="margin-32"></div>
-                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                        <p>-</p>
                     </div>
                     <div class="col-md-2">
                         <h5>48px</h5>
                         <div class="margin-48"></div>
-                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                        <p>This measurement should be used for the top and bottom padding for main sections. This gives the page enough breathing room, letting the user know that the content is a contained idea.</p>
                     </div>
                 </div> 
             </section>
@@ -1438,6 +1458,11 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
     <script>$('.dropdown-toggle').dropdown()</script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
 </body>
 </html>
 

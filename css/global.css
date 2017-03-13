@@ -212,9 +212,27 @@ input {
     border: 1px solid #D3E0E9;
     padding:8px;
     border-radius:4px;
+    height:34px;
+    width:100%;
 }
-.input-wrapper {
-    min-width:200px;
+.lux-input {
+    max-width:200px;
+}
+.lux-input h6 {
+    float:left;
+}
+.lux-input .fa {
+    float:right;
+    margin-top:6px;
+}
+.dropdown-toggle {
+    width:100%;
+    max-width:200px;
+}
+.dropdown-menu {
+    max-width:200px;
+    width:100%;
+    text-align: center;
 }
 .country-phone {
     width:200px;
@@ -897,6 +915,9 @@ NAVIGATION STYLES
 .info-wrapper .info-card-text{
     padding:0px;
 }
+.info-card-text a {
+    margin-bottom: 8px;
+}
 .headline {}
 .headline-center {
     text-align: center;
@@ -916,8 +937,17 @@ NAVIGATION STYLES
     margin-top:10px
 }
 
-
-
+/*TOOLTIP*/
+.tooltip {
+    opacity:1 !important;
+}
+.tooltip-inner {
+    background:#484848;
+    color:#ffffff;
+}
+tooltip-inner .tooltip-arrow {
+    background:#484848;
+}
 
 
 @media only screen and (max-width: 460px) {
