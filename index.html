@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/styleguide.css"> 
     <link rel="stylesheet" href="css/global.css"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    
     <title>Luxury Yacht Group Styleguide</title>
 </head>
 <body>
     <div class="sg-side">
-           <img src="assets/logo.png" style="width:200px;margin-bottom:40px;">
-        <ul style="list-style:none;padding-left:0px;">
+           <div class="sg-logo">
+               <img src="assets/logo.png" style="width:200px;margin-bottom:40px;">
+           </div>
+           <div class="sg-title">Styleguide 1.0</div>
+        <ul style="list-style:none;padding:20px;">
             <li><h4><a href="#introduction">Introduction</a></h4></li>
             <li><h4><a href="#colors">Colors</a></h4></li>
             <li><h4><a href="#typography">Typography</a></h4></li>
@@ -159,29 +162,29 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
             <section id="headline">
                <h1>Typography</h1>
-               <p>Typography styles should remain untouched. While margin / padding changes may need to be made, make sure to only make these changes when the element is within a custom class.</p>
+                <p class="p-width">Typography styles should remain untouched. While margin / padding changes may need to be made, make sure to only make these changes when the element is within a custom class.</p>
                <hr>
-               <h1 class="brand-headline">This is the style for the H1</h1>
+                <h1 class="brand-headline">H1: The quick brown fox jumps over the lazy dog</h1>
                <p class="content-title">Roboto Semibold - 32px</p>
                <p class="m-b-40">H1 should be used as a page title, and should only be referenced once a page.</p>
                
-               <h2 class="brand-headline">This is the style for the H2</h2>
+                <h2 class="brand-headline">H2 : The quick brown fox jumps over the lazy dog</h2>
                <p class="content-title">Roboto Semibold - 24px</p>
                <p class="m-b-40">H2 should be used as section titles.</p>
                
-               <h3 class="brand-headline">This is the style for the H3</h3>
+                <h3 class="brand-headline">H3 : The quick brown fox jumps over the lazy dog</h3>
                <p class="content-title">Roboto Semibold - 18px</p>
                <p class="m-b-40">H3 should be used as a subtitle for smaller sections. Should only be used when the section is within a larger sction that contains a H2 </p>
                
-               <h4 class="brand-headline">This is the style for the H4</h4>
+                <h4 class="brand-headline">H4 : The quick brown fox jumps over the lazy dog</h4>
                <p class="content-title">Roboto Semibold - 16px</p>
                <p class="m-b-40">-</p>
                
-               <h5 class="brand-headline">This is the style for the H5</h5>
+                <h5 class="brand-headline">H5 : The quick brown fox jumps over the lazy dog</h5>
                <p class="content-title">Roboto Semibold - 14px</p>
                <p class="m-b-40">-</p>
                
-               <h6 class="brand-headline">This is the style for the H6</h6>
+                <h6 class="brand-headline">H6 : The quick brown fox jumps over the lazy dog</h6>
                <p class="content-title">Roboto Bold - 12px</p>
                <p class="m-b-40">H6 should be used for titles for inputs, or titles for miniature data cards.</p>
                
@@ -338,6 +341,7 @@
             <hr>
             <section id="breadcrumbs">
                 <h2>Breadcrumb</h2>
+                <p class="p-width">Breadcrumbs are uses throughout the interior marketing pages, letting the user know how they got to their current page, and allows them to jump back to those previous page with a single click.</p>
                 <ul class="breadcrumb">
                     <li><a href="">Yacht Department Directory</a></li>
                     <li><a href="">Yacht Department Directory</a></li>
@@ -376,7 +380,7 @@
             <hr>
             <section id="pageturner">
                <h2>Page Turners</h2>
-               <p>Page turners are placed at the bottom of markting pages. They are primarily used on articles and positions pages, where the user needs a way to view additional related content.</p>
+                <p class="p-width">Page turners are placed at the bottom of markting pages. They are primarily used on articles and positions pages, where the user needs a way to view additional related content.</p>
                 <div class="info-data-wrapper">
                     <div class="row info-data-inner">
                         <a href="/crewpositions/engineering">
@@ -577,22 +581,37 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
            <section>
                <h1 class="brand-blue">Inputs</h1>
-                  <p>inputs are used throughout our crew and emplyer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
+               <p class="p-width">inputs are used throughout our crew and emplyer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
                    <div class="row">
-                       <div class="col-md-6 m-b-24">
+                       <div class="col-md-3 m-b-24">
                            <h5>Input</h5> 
                            <input class="input-wrapper" placeholder="Type Here">
                            <xmp><input class="input-wrapper" placeholder="Type Here"></xmp>
                        </div>
-                       <div class="col-md-6 m-b-24">
-                           <h5>Input</h5> 
+                       <div class="col-md-3 m-b-24">
+                           <h5>Dropdown</h5> 
+                           <div class="dropdown">
+                               <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                   Dropdown
+                                   <span class="caret"></span>
+                               </button>
+                               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                   <li><a href="#">Action</a></li>
+                                   <li><a href="#">Another action</a></li>
+                                   <li><a href="#">Something else here</a></li>
+                               </ul>
+                           </div>
+                           <xmp><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">Action</a></li><li><a href="#">Another action</a></li><li><a href="#">Something else here</a></li></ul></div></xmp>
+                       </div>
+                       <div class="col-md-3 m-b-24">
+                           <h5>Phone number input</h5> 
                            <div class="country-phone">
                                <input class="country-left" value="+1">
                                <input class="country-right" placeholder="Phone Number">
                            </div>
                            <xmp><div class="country-phone"><input class="country-left" value="+1"><input class="country-right" placeholder="Phone Number"></div></xmp>
                        </div>
-                       <div class="col-md-6 m-b-24">
+                       <div class="col-md-3 m-b-24">
                            <h5 class="brand-alert">Date Input</h5>
                            <div class="date-selector">
                                <input class="date-left">
@@ -613,7 +632,7 @@
             <section id="fontawesome">
                <h1 class="brand-blue">Icons</h1>
                <h2>Fontawesome.com Icons</h2>
-                <p>Font awesome is used as our primary icon source. The icons should always show in teh brand blue, unless they are on a blue background (which you can see a example of <a href="#white-icon">here</a>) or  if the icon is being used for a delete function (see trash icon below_</p>
+                <p class="p-width">Font awesome is used as our primary icon source. The icons should always show in teh brand blue, unless they are on a blue background (which you can see a example of <a href="#white-icon">here</a>) or  if the icon is being used for a delete function (see trash icon below_</p>
                <div class="row">
                    <div class="col-md-2">
                        <h5>Settings</h5>
@@ -670,7 +689,7 @@
            <hr>
             <section id="statusbadge">
                <h2>Status badge icons</h2>
-               <p>Status badges are used for helping users understand their current progress on tasks. These are mainly used on the daskboard sections.</p>
+                <p class="p-width">Status badges are used for helping users understand their current progress on tasks. These are mainly used on the daskboard sections.</p>
                <div class="row">
                    <div class="col-md-3">
                        <h5>Pending</h5>
@@ -705,7 +724,7 @@
            <hr>
            <section id="epaulets">
                <h2>Epaulets</h2>
-               <p>Epaulets are icons that are tied directly to specific positions in the yachting position. They should be used as much as possible, especially when talking about and linking to more information about the position.</p>
+               <p class="p-width">Epaulets are icons that are tied directly to specific positions in the yachting position. They should be used as much as possible, especially when talking about and linking to more information about the position.</p>
                <h3>Deck Epaulets</h3>
                <div class="row">
                    <div class="col-md-2">
@@ -856,7 +875,7 @@
                </div>
                <hr>
                <h3>Epaulet Sizing</h3>
-               <p>The Epaulets should be used at the specfied size, should should not be sized down. The only time they can be sized differently is ifthey are being sized up by 200%. The large size should only be used in the positions page.</p>
+               <p class="p-width">The Epaulets should be used at the specfied size, should should not be sized down. The only time they can be sized differently is ifthey are being sized up by 200%. The large size should only be used in the positions page.</p>
                <div class="row">
                    <div class="col-md-2">
                        <h5>Regular size epaulet</h5>
@@ -873,7 +892,7 @@
            <hr>
             <section id="custom">
                <h2>Custom Icons</h2>
-               <p>Custom icons are exported as svg in order to retain full resolutions are any device size / pixel density</p>
+                <p class="p-width">Custom icons are exported as svg in order to retain full resolutions are any device size / pixel density</p>
                <div class="row">
                    <div class="col-md-3 m-b-24">
                        <h5>Anchor Icon 1</h5>
@@ -952,7 +971,7 @@
             <section id="modules">
                 <h1>Modules</h1>
                 <h2 id="infocards">Info Cards</h2>
-                <p>Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section.<br>They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
+                <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section.<br>They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
                 <hr>
                 <div class="row">
                     <div class="col-md-3">
@@ -1216,8 +1235,10 @@
             <section>
                 <h1>Grid Systems</h1>
                 <p>Text about grid systems</p>
-                    <!--
-                   <div class="row">
+               <div class="row">
+                   
+                   <!--
+                    <div class="row">
                     <div class="col-md-1 grid-callout">col-md-1</div>
                     <div class="col-md-1 grid-callout"></div>
                     <div class="col-md-1 grid-callout"></div>
@@ -1230,9 +1251,44 @@
                     <div class="col-md-1 grid-callout"></div>
                     <div class="col-md-1 grid-callout"></div>
                     <div class="col-md-1 grid-callout"></div>
-                </div>
-            -->
+                    </div>
+                    -->
+               </div>
             </section>
+            <hr>
+            <section>
+                <h2>Margins</h2>
+                <p>All margins and pading are built on the 8px </p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5>8px</h5>
+                        <div class="margin-8"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>16px</h5>
+                        <div class="margin-16"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>24px</h5>
+                        <div class="margin-24"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>32px</h5>
+                        <div class="margin-32"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>48px</h5>
+                        <div class="margin-48"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                </div> 
+            </section>
+               
+            
         </div>
         <div class="col-md-1"></div>
     </div>
@@ -1245,7 +1301,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Navigation</h2>
-                        <p style="max-width:900px;">Our navigation allows users to sign into our system, as well giving them search features, and the ability to jump directly to the main marketing pages. Due to the fact that our local systems are run off of angular, the navigations on these page are purely staic and should only be used as placeholders in design.</p>
+                        <p class="p-width">Our navigation allows users to sign into our system, as well giving them search features, and the ability to jump directly to the main marketing pages. Due to the fact that our local systems are run off of angular, the navigations on these page are purely static and should only be used as placeholders in design.</p>
                         <div class="navbar" role="navigation">
                             <div class="navbar-header">
                                 <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40px" width="195px"></a>
@@ -1378,6 +1434,10 @@
         <div class="col-md-1"></div>
     </div>
     <!-- DUPLICATE TO CREATE NEW MODULE-->
+    <script src="node_modules/bootstrap/dist/js/jquery-3.1.1.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+    <script>$('.dropdown-toggle').dropdown()</script>
 </body>
 </html>
 

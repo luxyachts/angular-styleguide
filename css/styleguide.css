@@ -13,18 +13,30 @@ body {
 html {
     overflow-x:hidden;
 }
+.p-width {
+    max-width:700px;
+}
 section {
     padding:20px;
 }
 .last-edit {
     opacity: .5;
 }
+.sg-logo {
+    padding:20px;
+    height:80px
+}
+.sg-title {
+    background: #0372BC;
+    padding:10px 20px;
+    color:#fff;
+    font-weight:600;
+}
 .sg-side {
     width:260px;
     height:100vh;
     position: fixed;
     float:left;
-    padding:20px;
     overflow-y: scroll;
     background: #fff;
 }

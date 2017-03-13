@@ -5,26 +5,49 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-p {
-    line-height:1.6;
-    font-weight:500;
-}
 .m-r-20{
     margin-right:20px;
 }
 .m-r-5 {
     margin-right:5px;
 }
+.margin-8{
+    height:8px;
+    width:8px;
+    background:#D3E0E9;
+    margin-bottom:48px
+}
+.margin-16{
+    height:16px;
+    width:16px;
+    background:#D3E0E9;
+    margin-bottom:40px;
+}
+.margin-24{
+    height:24px;
+    width:24px;
+    background:#D3E0E9;
+    margin-bottom:32px
+}
+.margin-32 {
+    height:32px;
+    width:32px;
+    background:#D3E0E9;   
+    margin-bottom:24px;
+}
+.margin-48{
+    height:48px;
+    width:48px;
+    background:#D3E0E9;
+    margin-bottom:8px;
+}
 a {
     color:#0372BC;
     text-decoration: underline;
     cursor:pointer;
 }
-p {
-    color:#888888;
-}
 .hero {
-    padding:60px 20px 80px 20px;
+    padding:48px 24px 48px 24px;
     background:#fff;
     border-bottom:1px solid #D3E0E9;
     overflow:hidden;
@@ -91,35 +114,47 @@ p {
     color:#2DA94F;
 }
 li {
-    margin:12px 0px;
+    margin:8px 0px;
     color:#888888;
 }
 /*FONTS*/
 h1 {
     font-size:32px;
     font-weight:500;
+    margin:16px 0px 8px 0px;
 }
 h2 {
     font-size:24px;
     font-weight:500;
+    margin:8px 0px;
 }
 h3 {
     font-size:18px;
     font-weight:500;
+    margin:8px 0px;
 }
 h4 {
     font-size:16px;
     font-weight:500;
+    margin:8px 0px;
 }
 h5 {
     font-size:14px;
     font-weight:500;
+    margin:8px 0px;
 }
 h6 {
     font-size:12px;
     font-weight:700;
     color:#484848;
     opacity:.5;
+    margin:8px 0px;
+}
+p {
+    line-height:1.6;
+    font-weight:500;
+    color:#888888;
+    margin:8px 0px;
 }
 /*BUTTONS*/
 .btn-primary {
@@ -220,6 +255,14 @@ input {
     border-top-left-radius:0px;
     border-bottom-left-radius:0px;
 }
+.dropdown-menu li a {
+    color:#0372BC;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    background:#F5F8FA;
+    color:#0372BC;
+}
 /*STATUS*/
 .status-icon {
     height:26px;
@@ -255,6 +298,9 @@ input {
 .ep-large {
     height:90px;
     width:44px;
+}
+.ep-large img {
+    height:100%;
 }
 /*CAREER PATH*/
 .career-path-wrapper {
@@ -394,7 +440,7 @@ input {
 /*POSITION STATS*/
 .pos-stats {
     width:100%;
-    padding:10px 20px;
+    padding:18px 24px;
     border: 1px solid #D3E0E9;
     margin-bottom:20px;
     float:left;
@@ -811,7 +857,7 @@ NAVIGATION STYLES
 /*POSITION SELECT*/
 .info-cards {
     border:1px solid #D3E0E9;
-    margin-bottom:20px;
+    margin-bottom:24px;
     background:#fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(211, 224, 233, .05);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -843,7 +889,7 @@ NAVIGATION STYLES
     object-fit: cover;
 }
 .info-card-text {
-    padding:20px;
+    padding:16px;
 }
 .info-text-center {
     text-align: center;
