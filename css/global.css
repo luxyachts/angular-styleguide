@@ -69,7 +69,27 @@ body {
 .side-nav-active a{
     color:#fff;
 }
-
+/*ARTICLE AUTHOR*/
+.article-author {
+    float:left;
+}
+.author-avatar {
+    height:48px;
+    width:48px;
+    float:left;
+    overflow: hidden;
+}
+.author-avatar img {
+    width:100%;
+    height:auto;
+}
+.author-title {
+    float:left;
+    margin-left:16px;
+}
+.author-title h6{
+    margin-top:4px;
+}
 /*ICON SIZES*/
 .icon-lg {
     width:36px;
