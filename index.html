@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="css/styleguide.css"> 
     <link rel="stylesheet" href="css/global.css"> 
+    <link rel="stylesheet" href="css/styleguide.css"> 
+   
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     
@@ -30,7 +31,7 @@
             <li><h4><a href="#buttons">Buttons</a></h4></li>
                 <ol>
                     <li><a href="#mainbuttons">Main Buttons</a></li>
-                    <li><a href="#textlinks">Text Links</a></li>
+                    <li><a href="#textlinks">button links</a></li>
                     <li><a href="#breadcrumbs">Breadcrumbs</a></li>
                     <li><a href="#buttongroups">Button Groups</a></li>
                     <li><a href="#pageturner" class="brand-alert">Page Turner</a></li>
@@ -56,6 +57,8 @@
                     <li><a href="#headlines">Headline Treatments</a></li>
                     <li><a href="#pagetitles">Page Titles</a></li>
                     <li><a href="#preloader">Preloader</a></li>
+                    <li><a href="#accordian">Accordian</a></li>
+                    <li><a href="#modal">Modal</a></li>
                    <!--
                     <li>User Badge</li>
                     <li>Items Selection</li>
@@ -100,8 +103,8 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
            <section id="colors">
                <h1>Colors</h1>
-               <p>This is the style guide for Luxury Yacht Group</p>
-               <hr>
+               <h2>Primary Colors</h2>
+               <p>Text about colors</p>
                <div class="row">
                    <div class="col-md-3 col-xs-6">
                        <div class="swatch-wrapper">
@@ -150,6 +153,46 @@
                            <div class="swatch brand-green-swatch"></div>
                            <h4>#2DA94F</h4>
                            <h5>.brand-green</h5>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-xs-6">
+                       <div class="swatch-wrapper">
+                           <div class="swatch brand-gold"></div>
+                           <h4>#FFD700</h4>
+                           <h5>.brand-gold</h5>
+                       </div>
+                   </div>
+               </div>
+               <hr>
+               <h2>Secondary Colors</h2>
+               <p>Text about colors</p>
+               <div class="row">
+                   <div class="col-md-3 col-xs-6">
+                       <div class="swatch-wrapper">
+                           <div class="swatch brand-sec-bg-lighter"></div>
+                           <h4>#037AC9</h4>
+                           <h5>brand-sec-bg-lighter</h5>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-xs-6">
+                       <div class="swatch-wrapper">
+                           <div class="swatch brand-sec-bg-light"></div>
+                           <h4>#0363A2</h4>
+                           <h5>brand-sec-bg-light</h5>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-xs-6">
+                       <div class="swatch-wrapper">
+                           <div class="swatch brand-sec-bg-dark"></div>
+                           <h4>#024B7C</h4>
+                           <h5>brand-sec-bg-dark</h5>
+                       </div>
+                   </div>
+                   <div class="col-md-3 col-xs-6">
+                       <div class="swatch-wrapper">
+                           <div class="swatch brand-sec-bg-darker"></div>
+                           <h4>#01253C</h4>
+                           <h5>brand-sec-bg-darker</h5>
                        </div>
                    </div>
                </div>
@@ -256,28 +299,28 @@
                     </div>
                     <div class="col-md-2 m-b-24">
                         <h5>Primary button style</h5> 
-                        <button class="btn btn-primary">Click Me</button>
-                        <xmp><button class="btn btn-primary">Click Me</button></xmp>
+                        <button class="btn btn-primary">button link</button>
+                        <xmp><button class="btn btn-primary">button link</button></xmp>
                     </div>
                     <div class="col-md-2 m-b-24">
                         <h5>Secondary button style</h5>
-                        <button class="btn btn-secondary">Click Me</button>
-                        <xmp><button class="btn btn-secondary">Click Me</button></xmp>
+                        <button class="btn btn-secondary">button link</button>
+                        <xmp><button class="btn btn-secondary">button link</button></xmp>
                     </div>
                     <div class="col-md-2 m-b-24">
                         <h5>Disabled button style</h5>
-                        <button class="btn btn-disabled">Click Me</button>
-                        <xmp><button class="btn btn-disabled">Click Me</button></xmp>
+                        <button class="btn btn-disabled">button link</button>
+                        <xmp><button class="btn btn-disabled">button link</button></xmp>
                     </div>
                     <div class="col-md-2 m-b-24">
                         <h5>Alert button style</h5>
-                        <button class="btn btn-alert">Click Me</button>
-                        <xmp><button class="btn btn-alert">Click Me</button></xmp>
+                        <button class="btn btn-alert">button link</button>
+                        <xmp><button class="btn btn-alert">button link</button></xmp>
                     </div>
                     <div class="col-md-2 m-b-24">
                         <h5>Alert button style</h5>
-                        <button class="btn btn-white">Click Me</button>
-                        <xmp><button class="btn btn-white">Click Me</button></xmp>
+                        <button class="btn btn-white">button link</button>
+                        <xmp><button class="btn btn-white">button link</button></xmp>
                     </div>
                </div>
                <div class="row" id="white-icon"> 
@@ -287,23 +330,23 @@
                    </div>
                    <div class="col-md-2 m-b-24">
                        <h5>Primary button style w/ icon</h5> 
-                       <button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button>
-                       <xmp><button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button></xmp>
+                       <button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button>
+                       <xmp><button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button></xmp>
                    </div>
                    <div class="col-md-2 m-b-24">
                        <h5>Secondary button style w/ icon</h5>
-                       <button class="btn btn-secondary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button>
-                       <xmp><button class="btn btn-secondary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button></xmp>
+                       <button class="btn btn-secondary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button>
+                       <xmp><button class="btn btn-secondary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button></xmp>
                    </div>
                    <div class="col-md-2 m-b-24">
                        <h5>Disabled button style w/ icon</h5>
-                       <button class="btn btn-disabled"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button>
-                       <xmp><button class="btn btn-disabled"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Click Me</button></xmp>
+                       <button class="btn btn-disabled"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button>
+                       <xmp><button class="btn btn-disabled"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> button link</button></xmp>
                    </div>
                    <div class="col-md-2 m-b-24">
                        <h5>Alert button style w/ icon</h5>
-                       <button class="btn btn-alert"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i>Click Me</button>
-                       <xmp><button class="btn btn-alert"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i>Click Me</button></xmp>
+                       <button class="btn btn-alert"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i>button link</button>
+                       <xmp><button class="btn btn-alert"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i>button link</button></xmp>
                    </div>
                 </div>
                <div class="row"> 
@@ -335,9 +378,9 @@
            </section>
            <hr>
             <section id="textlinks">
-                <h2>Text Links</h2>
+                <h2>Text links</h2>
                 <p>Text links should be used as tertiary buttons, breadcrumbs, and links within articles.</p>
-                <a>Click Me</a>
+                <a>Text link</a>
             </section>
             <hr>
             <section id="tooltips">
@@ -395,6 +438,20 @@
                         <button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button>
                     </div>
                 </div>
+                <hr>
+                <h4>Minature Tabs</h4>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li>
+                </ul>
+                <hr>
+                <h4>Large Tabs</h4>
+                <ul class="nav nav-tabs step-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li>
+                </ul>
             </section>
             <hr>
             <section id="pageturner">
@@ -800,7 +857,7 @@
                <div class="row">
                    <div class="col-md-2">
                        <h5>Engineer 1 stripe</h5>
-                       <img src="assets/interior_ep_02.svg">
+                       <img src="assets/engineering_ep_02.svg">
                        <h6>Used for the following positions</h6>
                        <ul>
                            <li>Junior Engineer (Unlicensed)</li>
@@ -808,7 +865,7 @@
                    </div>
                    <div class="col-md-2">
                        <h5>Engineer 2 stripes</h5>
-                       <img src="assets/interior_ep_03.svg">
+                       <img src="assets/engineering_ep_03.svg">
                        <h6>Used for the following positions</h6>
                        <ul>
                            <li>Electroncs Engineer (ETO)</li>
@@ -822,13 +879,20 @@
                    </div>
                    <div class="col-md-2">
                        <h5>Engineer 3 stripes</h5>
-                       <img src="assets/interior_ep_04.svg">
+                       <img src="assets/engineering_ep_04.svg">
                        <h6>Used for the following positions</h6>
                        <ul>
                            <li>Chief Y4 (<200gt < 1500kw)</li>
                            <li>Chief Y3 (<500gt < 5000kw)</li>
                            <li>Chief Y2 (<3000gt < 3000kw)</li>
                            <li>Chief Y1 (<3000gt < 9000kw)</li>
+                       </ul>
+                   </div>
+                   <div class="col-md-2">
+                       <h5>Engineer 3 stripes</h5>
+                       <img src="assets/engineering_ep_05.svg">
+                       <h6>Used for the following positions</h6>
+                       <ul>
                            <li>Chief Engineer Unlimited</li>
                        </ul>
                    </div>
@@ -1044,12 +1108,12 @@
                             <div class="info-card-text">
                                 <h4>Professional Crew Placement</h4>
                                 <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
-                                <a class="btn btn-primary">Click Me</a>
+                                <a class="btn btn-primary">button link</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <xmp><div class="col-sm-6 col-xs-6 col-ss-12"><div class="info-cards"><div class="info-card-text"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">Click Me</a></div></div></div></xmp>
+                        <xmp><div class="col-sm-6 col-xs-6 col-ss-12"><div class="info-cards"><div class="info-card-text"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">button link</a></div></div></div></xmp>
                     </div>
                 </div>
                 <hr>
@@ -1066,12 +1130,12 @@
                             <div class="info-card-text">
                                 <h4>Professional Crew Placement</h4>
                                 <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
-                                <a class="btn btn-primary">Click Me</a>
+                                <a class="btn btn-primary">button link</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <xmp><div class="col-sm-6 col-xs-6 col-ss-12"><div class="info-cards"><div class="info-card-image"><img src="assets/test_image.png"></div><div class="info-card-text"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">Click Me</a></div></div></div></xmp>
+                        <xmp><div class="col-sm-6 col-xs-6 col-ss-12"><div class="info-cards"><div class="info-card-image"><img src="assets/test_image.png"></div><div class="info-card-text"><h4>Professional Crew Placement</h4><p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">button link</a></div></div></div></xmp>
                     </div>
                 </div>
                 <hr>
@@ -1247,6 +1311,97 @@
                     </div>
                 </div>
             </section>
+            <hr>
+            <section id="accordian">
+                <h2>Accordian</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Titlebar 2</h3>
+                        <p>Placeholder</p>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne"  data-toggle="collapse" role="button" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h4 class="panel-title">
+                                        <a>Collapsible Group Item #1</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                       <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h4 class="panel-title">
+                                        <a>Collapsible Group Item #2</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                       <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h4 class="panel-title">
+                                        <a>Collapsible Group Item #3</a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                       <p>
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="modal">
+                <h2>Modal</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Titlebar 2</h3>
+                        <p>Placeholder</p>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                            Launch demo modal
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        ...
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
         </div>
         <div class="col-md-1"></div>
     </div>  
