@@ -31,6 +31,7 @@ body {
 .content {
     border:1px solid #D3E0E9;
     padding:24px; 
+    background:#fff;
 }
 
 /*SIDE NAV*/
@@ -40,7 +41,6 @@ body {
 }
 .side-nav {
     width:100%;
-    max-width:200px;
     background:#fff;
     border:1px solid #D3E0E9;
 }
@@ -72,6 +72,7 @@ body {
 /*ARTICLE AUTHOR*/
 .article-author {
     float:left;
+    width: 100%;
 }
 .author-avatar {
     height:48px;
@@ -535,6 +536,9 @@ input {
 .breadcrumb li {
     margin:0px;
 }   
+.bread-single{
+    margin-bottom:0px;
+}
 /*MOBILE DOWNLOAD*/
     .mobile-download button{
         background:#0372bc;
@@ -674,7 +678,7 @@ li {
     background:#F5F8FA !important;
     cursor: pointer;
 }
-.panel-heading h4{
+.panel-title{
     color:#0372BC;
     text-decoration: none;
 }
@@ -759,6 +763,24 @@ tooltip-inner .tooltip-arrow {
     margin-top:10px
 }
 
+/*ARTICLE IMAGE*/
+.article-image {
+    width:100%;
+    height:600px;
+    background: #484848;
+    overflow:hidden;
+}
+.article-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.article-text h1 {
+    margin-bottom:24px;
+}
+.article-text {
+    padding-bottom:48px;
+}
 /*******************************************
 NAVIGATION STYLES
 /*******************************************/

@@ -53,6 +53,7 @@
                 </ol>
             <li><h4><a href="#modules">Modules</a></h4></li>
                 <ol>
+                    <li><a href="#container">Container</a></li>
                     <li><a href="#infocards">Info Cards</a></li>
                     <li><a href="#headlines">Headline Treatments</a></li>
                     <li><a href="#pagetitles">Page Titles</a></li>
@@ -1056,7 +1057,27 @@
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;"> 
             <section id="modules">
-                <h1>Modules</h1>
+                <h1>Modules</h1> 
+                <hr>
+                <h2 id="container">Content container</h2>
+                <p></p>
+                <div class="row">
+                   <div class="col-md-3">
+                       <h3>Content Wrapper</h3>
+                       <p>Content wrapper should be used everywhere.</p>
+                   </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                            This is a content wrapper
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <xmp><div class="content"></div></xmp>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section>
                 <h2 id="infocards">Info Cards</h2>
                 <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section. They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
                 <hr>
@@ -1605,6 +1626,14 @@
                         <img src="assets/template_basic.png" class="img-responsive" style="margin-bottom:20px;border: 1px solid #D3E0E9;">
                         <a href="_templates/lux_basic_template.html" class="btn btn-primary">View Template</a>
                     </div>
+                    <div class="col-md-3">
+                        <h3>Article Template</h3>
+                        <a href="_templates/lux_article_template.html" class="btn btn-primary">View Template</a>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>User Dashboard Template</h3>
+                        <a href="_templates/lux_user_template.html" class="btn btn-primary">View Template</a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -1614,18 +1643,7 @@
     <div class="row" style="margin-left:260px;" id="assets">
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
-            <section>
-                <h1>Assets</h1>
-                <h2>Content container</h2>
-                <p></p>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content">
-                            This is a content wrapper
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
         </div>
         <div class="col-md-1"></div>
     </div> 
