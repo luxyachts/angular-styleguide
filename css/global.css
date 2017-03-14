@@ -32,6 +32,7 @@ body {
     border:1px solid #D3E0E9;
     padding:24px; 
     background:#fff;
+    width:100%;
 }
 
 /*SIDE NAV*/
@@ -525,7 +526,14 @@ input {
 .path-active .career-text h5 {
     color:#484848;
 }
-
+/*LABELS*/
+.label-article {
+    float:left;
+}
+.article-labels {
+    width:100%;
+    margin-bottom:24px;
+}
 /*BREAD CRUMBS*/
 .breadcrumb {
     height:auto;
@@ -538,6 +546,7 @@ input {
 }   
 .bread-single{
     margin-bottom:0px;
+    padding:0px 15px;
 }
 /*MOBILE DOWNLOAD*/
     .mobile-download button{
@@ -770,6 +779,11 @@ tooltip-inner .tooltip-arrow {
     background: #484848;
     overflow:hidden;
 }
+@media only screen and (max-width: 768px) {
+    .article-image {
+        height:300px;
+    }
+}
 .article-image img {
     height: 100%;
     width: 100%;
@@ -780,6 +794,66 @@ tooltip-inner .tooltip-arrow {
 }
 .article-text {
     padding-bottom:48px;
+    width:100%;
+    margin-bottom:24px;
+}
+/*
+.article-quote {
+    padding:24px 0px;
+}
+.article-image-inline {
+    padding:24px;
+    border:1px solid #D3E0E9;
+}
+.article-image-inline-wrapper {
+    background:red;
+    height: 300px;
+}
+.article-inline-text {
+    background:blue;
+}
+*/
+/*RELATED ARTICLES*/
+.related-articles {
+    height:auto;
+    float:left;
+    height: auto;
+    background:#fff;
+    border:1px solid #D3E0E9;
+    padding:24px;
+}
+.related-articles h4 {
+    margin-bottom:16px;
+}
+.related-article{
+    float:left;
+    width:100%;
+}
+.related-img {
+    height:48px;
+    width:48px;
+    background:Red;
+    float:left;
+    overflow:hodden;
+}
+.related-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.related-text {
+    float:left;
+    height:auto;
+    margin-left:16px;
+    width:calc(100% - 74px);
+}
+.related-text h5 {
+    margin-top:0px;
+    margin-bottom:4px;
+    line-height:1.4;
+}
+.related-text a {
+    margin-top:-4px;
 }
 /*******************************************
 NAVIGATION STYLES
