@@ -52,18 +52,29 @@
                     <li><a href="#tags">Tags</a></li>
                     <li><a href="#custom">Custom Icons</a></li>
                 </ol>
+            <li><h4><a href="#grid">Grid Systems</a></h4></li>
+            <ol>
+                <li><a href="#responsive">Responsive</a></li>
+                <li><a href="#margin">Margins / Padding</a></li>
+            </ol>
+            <li><h4><a href="#Navigation">Navigation Elements</a></h4></li>
+            <ol>
+                <li><a href="#navigation">Navigation</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ol>
             <li><h4><a href="#modules">Modules</a></h4></li>
                 <ol>
                     <li><a href="#container">Container</a></li>
                     <li><a href="#infocards">Info Cards</a></li>
                     <li><a href="#article-tags">Article Tags</a></li>
-                    <li><a href="#related-articles">Related Articles</a></li>
+                    <li><a href="#related-articles">Article Listing</a></li>
                     <li><a href="#headlines">Headline Treatments</a></li>
                     <li><a href="#pagetitles">Page Titles</a></li>
                     <li><a href="#preloader">Preloader</a></li>
                     <li><a href="#article-hero">Article Hero</a></li>
                     <li><a href="#accordian">Accordian</a></li>
                     <li><a href="#modal">Modal</a></li>
+                    <li><a href="#author">Author</a></li>
                    <!--
                     <li>User Badge</li>
                     <li>Items Selection</li>
@@ -71,17 +82,6 @@
                     <li>Add Position</li>
                     <li>Data Chip</li>
                     -->
-                </ol>
-            <li><h4><a href="#grid">Grid Systems</a></h4></li>
-                <!--<ol>
-                    <li>Marketing Pages</li>
-                    <li>Dashboard</li>
-                    <li>Mobile</li>
-                </ol>-->
-            <li><h4><a href="#Navigation">Navigation Elements</a></h4></li>
-                <ol>
-                    <li><a href="#navigation">Navigation</a></li>
-                    <li><a href="#footer">Footer</a></li>
                 </ol>
             <li><h4><a href="#templates">Premade Templates</a></h4></li>
             <li><h4><a href="#assets">Assets</a></h4></li>
@@ -109,8 +109,9 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
            <section id="colors">
                <h1>Colors</h1>
+               <hr>
                <h2>Primary Colors</h2>
-               <p>Text about colors</p>
+               <p>Primary color are the main colors for the current UI.</p>
                <div class="row">
                    <div class="col-md-3 col-xs-6">
                        <div class="swatch-wrapper">
@@ -171,7 +172,7 @@
                </div>
                <hr>
                <h2>Secondary Colors</h2>
-               <p>Text about colors</p>
+               <p>Secondary colors should be used for illustrations and spot colors through out the UI. Use sparingly.</p>
                <div class="row">
                    <div class="col-md-3 col-xs-6">
                        <div class="swatch-wrapper">
@@ -335,9 +336,9 @@
                        <p>Text buttons are the primary style of buttons.</p>
                    </div>
                    <div class="col-md-2 m-b-24">
-                       <h5>Primary button style w/ icon</h5> 
-                       <button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Button Link</button>
-                       <xmp><button class="btn btn-primary"><i class="fa fa-info-circle m-r-5" aria-hidden="true"></i> Button Link</button></xmp>
+                       <h5>Open in new tab</h5> 
+                       <button class="btn btn-primary"><i class="fa fa-external-link m-r-5" aria-hidden="true"></i> Button Link</button>
+                       <xmp><button class="btn btn-primary"><i class="fa fa-external-link m-r-5" aria-hidden="true"></i> Button Link</button></xmp>
                    </div>
                    <div class="col-md-2 m-b-24">
                        <h5>Secondary button style w/ icon</h5>
@@ -407,57 +408,101 @@
             <hr>
             <section id="breadcrumbs">
                 <h2>Breadcrumb</h2>
-                <p class="p-width">Breadcrumbs are uses throughout the interior marketing pages, letting the user know how they got to their current page, and allows them to jump back to those previous page with a single click.</p>
-                <ul class="breadcrumb">
-                    <li><a href="">Yacht Department Directory</a></li>
-                    <li><a href="">Yacht Department Directory</a></li>
-                    <li class="brand-text">Interior Department</li>
-                </ul>
+                <div clss="row">
+                    <div class="col-md-3">
+                        <p>Breadcrumbs are uses throughout the interior marketing pages, letting the user know how they got to their current page, and allows them to jump back to those previous page with a single click.</p>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="breadcrumb">
+                            <li><a href="">Yacht Department Directory</a></li>
+                            <li><a href="">Yacht Department Directory</a></li>
+                            <li class="brand-text">Interior Department</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
             <hr>
             <section id="buttongroups">
                 <h2>Button Groups</h2>
                 <p>Button groups are used for either step-based flows, or for loading a section of content below the button group.</p>
-                <h4>Text only button group</h4>
-                <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default btn-active">Left</button>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Text only button group</h4>
+                        <xmp><div class="btn-group btn-group-justified" role="group" aria-label="..."><div class="btn-group" role="group"><button type="button" class="btn btn-default btn-active">Left</button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default">Middle</button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default">Right</button></div></div></xmp>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default">Middle</button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default">Right</button>
+                    <div class="col-md-9">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-active">Left</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default">Middle</button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default">Right</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
-                <h4>With Iconography</h4>
-                <p>Icons inside of the buttons should help convey themessage of the button, and should be pulled form the designated icons in this styleguide.</p>
-                <div class="btn-group btn-group-justified" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default btn-active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Left</span></button>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>With Iconography</h4>
+                        <p>Icons inside of the buttons should help convey themessage of the button, and should be pulled form the designated icons in this styleguide.</p>
+                        <xmp><div class="btn-group btn-group-justified" role="group" aria-label="..."><div class="btn-group" role="group"><button type="button" class="btn btn-default btn-active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Left</span></button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Middle</span></button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button></div></div></xmp>
                     </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Middle</span></button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button>
+                    <div class="col-md-9">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default btn-active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Left</span></button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Middle</span></button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
-                <h4>Minature Tabs</h4>
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li>
-                </ul>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Minature Tabs</h4>
+                        <p>asdfasdf</p>
+                        <xmp><ul class="nav nav-tabs"><li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li><li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li><li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li></ul></xmp>
+                    </div>
+                    <div class="col-md-9">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li>
+                            <li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li>
+                            <li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <hr>
-                <h4>Large Tabs</h4>
-                <ul class="nav nav-tabs step-tabs">
-                    <li class="active"><a data-toggle="tab" href="#home">Tab Title 1</a></li>
-                    <li><a data-toggle="tab" href="#menu1">Tab Title 1</a></li>
-                    <li><a data-toggle="tab" href="#menu2">Tab Title 2</a></li>
-                </ul>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>Large Tabs</h4>
+                        <xmp><div class="btn-group btn-group-justified" role="group" aria-label="..."><div class="btn-group" role="group"><button type="button" class="btn btn-default tab-large"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Left</span></button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default tab-inactive"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Middle</span></button></div><div class="btn-group" role="group"><button type="button" class="btn btn-default tab-inactive"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button></div></div></xmp>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default tab-large"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Left</span></button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default tab-inactive"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Middle</span></button>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default tab-inactive"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span>Right</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <hr>
             <section id="pageturner">
@@ -492,13 +537,21 @@
             </section>
             <hr>
             <section id="mobiledownload">
-                <h2>Mobile Download button</h2>
-               <p class="p-width">Mobile download buttons should only be visible under 768 width screens, and are used as a secondary viewing method for larger content that does not scale well on mobile. The link should open open up a .PDf or .SVG in a new table and should allow the user to zoom in and out of the document.</p>
-                <div class="mobile-download">
-                    <button type="submit">
-                        <i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic
-                    </button>
-                </div>
+            <h2>Mobile Download button</h2>
+              <div class="row">
+                  <div class="col-md-3">
+                      <p class="p-width">Mobile download buttons should only be visible under 768 width screens, and are used as a secondary viewing method for larger content that does not scale well on mobile. The link should open open up a .PDf or .SVG in a new tab and should allow the user to zoom in and out of the document.<br><br>Mobile buttons should always be used outside of the .row, so that it fits the full width of the screen.</p>
+                      <xmp><div class="mobile-download"><button type="submit"><i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic</button></div></xmp>
+                  </div>
+                  <div class="col-md-9">
+                     <p class="show-768 scale-text">Scale down screen to view button</p>
+                      <div class="mobile-download">
+                          <button type="submit">
+                              <i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic
+                          </button>
+                      </div>
+                  </div>
+              </div>
             </section>
             <hr>
             <section id="careerpath">
@@ -1001,7 +1054,7 @@
            <hr>
            <section id="tags">
                <h2>Tags</h2>
-               <p>asdfasdf</p>
+               <p>Tags should be used for smaller chunks of data, like the filter attributes for articles.</p>
                <div class="row">
                    <div class="col-md-12">
                        <span class="label label-default">Default</span>
@@ -1089,6 +1142,170 @@
         <div class="col-md-1"></div>
     </div> 
     
+    <div class="row" style="margin-left:260px;" id="grid">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
+
+            <section>
+                <h1>Grid Systems</h1>
+                <hr>
+                <h2 id="responsive">Repsonsive Breakpoints</h2>
+                <p>Text about grid systems</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h4>1600px max-width</h4>
+                        <p>1600 is our default max size. Content should always sit flush against this container.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>1200px max-width</h4>
+                        <p>1200 is our standard desktop size. This breakpoint mainly resets the dashboard UI. For the marketing pages this breakpoint shouldn't make a big difference.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>990px max-width</h4>
+                        <p>The 990 breakpoint is the point in which the user and employer dashboards switch from a horizontal to a vertical experience, so a lot of accomidations for the dashboard UI should be taken. For the marketing pages, this breakpooint should not make a lot of difference.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>460px max-width</h4>
+                        <p>The final breakpoint is 460, which is primarally used for mobile devices. At this size, we shoul dbe making sure that the UI is size correctly for the user now that we're taking tactile interactions into account. Also, in times where there needs to be a cut in the content, make sure to prioritize navigation and information content over imagery and fancy animations.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="margins">
+                <h2>Margins</h2>
+                <p>All margins and pading are built on the 8px </p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h5>8px</h5>
+                        <div class="margin-8"></div>
+                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>16px</h5>
+                        <div class="margin-16"></div>
+                        <p>16px margins and padding should be used for info cards.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>24px</h5>
+                        <div class="margin-24"></div>
+                        <p>Should be used as a spacing measurement between info-cards.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>32px</h5>
+                        <div class="margin-32"></div>
+                        <p>32px should be used sparingly, when spacing out multiple elements.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <h5>48px</h5>
+                        <div class="margin-48"></div>
+                        <p>This measurement should be used for the top and bottom padding for main sections. This gives the page enough breathing room, letting the user know that the content is a contained idea.</p>
+                    </div>
+                </div> 
+            </section>
+
+
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+
+    <div class="row" style="margin-left:260px;" id="navigation">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
+            <section>
+                <h1>Navigation Elements</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Navigation</h2>
+                        <p class="p-width">Our navigation allows users to sign into our system, as well giving them search features, and the ability to jump directly to the main marketing pages. Due to the fact that our local systems are run off of angular, the navigations on these page are purely static and should only be used as placeholders in design.</p>
+                        <div class="navbar" role="navigation">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40px" width="195px"></a>
+                                <div class="nav-links">
+                                    <button>
+                                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa fa-search fa-lg" aria-hidden="true"></i> 
+                                    </button>
+                                    <button class="mobileHide">
+                                        <i class="fa fa-sign-in" aria-hidden="true" style="margin-right:10px;"></i>Sign In
+                                    </button>
+                                    <button class="mobileHide">
+                                        <i class="fa fa-user-plus" aria-hidden="true" style="margin-right:10px;"></i>Create Account
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin-top:60px;">
+                <div class="row" id="footer">
+                    <div class="col-md-12">
+                        <h2>Footer</h2>
+                        <div class="float">
+                            <div class="footer">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/footer_logo_white.png" class="img-responsive" style="min-width:250px;max-width:300px;" />
+                                        <p class="quote">"Luxury Yacht Group provides sales, charter, management and crew services to luxury yachts and their owners around the world."</p>
+                                    </div>
+                                    <div class="col-md-1 mobile-center m-l-3p">
+                                        <h5>COMPANY</h5>
+                                        <ul>
+                                            <li><a href="https://www.luxyachts.com/about-us">About</a></li>
+                                            <li><a href="https://www.luxyachts.com/site/map">Sitemap</a></li>
+                                            <li><a href="https://www.luxyachts.com/contact-us">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-1 mobile-center m-l-1p">
+                                        <h5>MAIN</h5>
+                                        <ul>
+                                            <li><a href="https://www.luxyachts.com/sales">Sales</a></li>
+                                            <li><a href="https://www.luxyachts.com/charter">Charter</a></li>
+                                            <li><a href="https://www.luxyachts.com/management">Management</a></li>
+                                            <li><a href="https://www.luxyachts.com/crew">Crew</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2 mobile-center m-l-1p footer-fix">
+                                        <h5>CONNECT</h5>
+                                        <ul>
+                                            <li>Fort Lauderdale: <span>+1 954 525 9959</span></li>
+                                            <li>UK: <span>+44 (0) 238 000 9959</span></li>
+                                            <li>San Diego: <span>+1 858 224 2789</span></li>
+                                            <li>Annapolis: <span>+1 443 808 0717</span></li>
+                                            <li>Antibes: <span>+33 (0) 489 120 970</span></li>
+                                            <li>Mallorca: <span>+34 (871) 151211</span></li>
+                                            <li>Auckland: <span>+64 (0) 9 282 4530</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3 mobile-center m-l-1p">
+                                        <h5>SOCIAL</h5>
+                                        <div class="footerSocial">
+                                            <a href="mailto:info@luxyachts.com" target="_blank">
+                                                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                                            </a>
+                                            <a href="https://www.facebook.com/LuxuryYachtGroup/" target="_blank">
+                                                <i class="fa fa-facebook fa-lg" aria-hidden="true" style="margin-top:7px;"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/luxuryyachtgroup/" target="_blank">
+                                                <i class="fa fa-instagram fa-lg" aria-hidden="true" style="margin-top:6px;"></i>
+                                            </a>
+                                        </div>
+                                        <div class="footerLegal">
+                                            <h5>Copyright ©2001 - 2017 Luxury Yacht Group LLC</h5>
+                                            <a href="https://www.luxyachts.com/Terms-and-Conditions">Terms of Use</a>
+                                            <a href="https://www.luxyachts.com/privacy-policy">Privacy Policy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-md-1"></div>
+    </div>    
 
     <div class="row" style="margin-left:260px;" id="modules">
         <div class="col-md-1"></div>
@@ -1101,7 +1318,7 @@
                 <div class="row">
                    <div class="col-md-3">
                        <h3>Content Wrapper</h3>
-                       <p>Content wrapper should be used everywhere.</p>
+                       <p>Contente wrapper should be used as a parent to the .row groups, and should wrapper all content blocks.</p>
                    </div>
                     <div class="col-md-6">
                         <div class="content">
@@ -1116,7 +1333,7 @@
             <hr>
             <section>
                 <h2 id="infocards">Info Cards</h2>
-                <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section. They should always be wrapped in either a col-md-4 or col-md-3 wrapper.</p>
+                <p class="p-width">Info cards should be used for brief ideas and should be used to display marketing data, or give insight into a larger section and allow the user to click into the section. They should always be wrapped in either a col-md-4 or col-md-3 wrapper.<br><br>They do not need to be wrapped in a content wrapper as they have their own wrapper css.</p>
                 <hr>
                 <div class="row">
                     <div class="col-md-3">
@@ -1219,16 +1436,17 @@
             </section>
             <hr>
             <section id="article-tags">
-                <h2>Article Tags</h2>
-                <p>Text</p>
                 <div class="row">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <h3>Article Tags Wrapper</h3>
+                        <p>Article tags are the filterable tags that are associated with yachting articles. You can see an exmaple of their use <a href="_templates/lux_article_template.html">here.</a></p>
+                    </div>
                     <div class="col-md-3">
                         <div class="article-labels content">
                             <h4>Article Tags:</h4>
-                            <span class="label label-default">Default</span>
-                            <span class="label label-default">Default</span>
-                            <span class="label label-default">Default</span>
+                            <span class="label label-default">Yachting</span>
+                            <span class="label label-default">Captain</span>
+                            <span class="label label-default">Miami</span>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -1238,10 +1456,12 @@
             </section>
             <hr>
             <section id="related-articles">
-                <h2>Related Articles</h2>
-                <p>Test</p>
+                <h2>Article Listings</h2>
                 <div class="row">
-                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <h3>Article Listing w/ Image</h3>
+                        <p>Artcile listings should be placed on the individual article pages, and the displayed articles should be related to the current page based on their filter tags.</p>
+                    </div>
                     <div class="col-md-3">
                         <div class="related-articles">
                             <h4>Related Articles</h4>
@@ -1292,9 +1512,48 @@
                 </div>
             </section>
             <hr>
+            <section id="related-articles">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Article Listing w/o Image</h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="related-articles">
+                            <h4>Related Articles</h4>
+                            <div class="related-article">
+                                <div class="related-text-only">
+                                    <a>This is the title for an article This is the title for an article</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="related-article">
+                                <div class="related-text-only">
+                                    <a>This is the title for an article</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="related-article">
+                                <div class="related-text-only">
+                                    <a>This is the title for an article</a>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="related-article">
+                                <div class="related-text-only">
+                                    <a>This is the title for an article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp><div class="related-articles"><h4>Related Articles</h4><div class="related-article"><div class="related-text-only"><a>This is the title for an article This is the title for an article</a></div></div><hr><div class="related-article"><div class="related-text-only"><a>This is the title for an article</a></div></div><hr><div class="related-article"><div class="related-text-only"><a>This is the title for an article</a></div></div><hr><div class="related-article"><div class="related-text-only"><a>This is the title for an article</a></div></div></div></xmp>
+                    </div>
+                </div>
+            </section>
+            <hr>
             <section id="article-hero">
-                <h2>Article Tags</h2>
-                <p>Text</p>
+                <h2>Hero Images</h2>
+                <p>Hero images should be used on the top of marketing pages, and should be contextual to the content on the page.</p>
                 <xmp><div class="article-image"><img src=""></div></xmp>
                 <div class="article-image">
                     <img src="https://images.unsplash.com/photo-1480951904597-5387d1c232da?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
@@ -1303,7 +1562,7 @@
             <hr>
             <section id="headlines">
                 <h2>Headline Treatments</h2>
-                <p>Text treatments have been defined so that you do not need to add padding / margin: </p>
+                <p>Headlines should be place directly underneath the main navigation, and mainly present in the marketing pages.</p>
                 <hr>
                 <div class="row">
                     <div class="col-md-3">
@@ -1357,7 +1616,7 @@
                                 </div>
                             </div>
                         </section>
-                        <xmp class="m-t-20"></xmp>
+                        <xmp class="m-t-20"><section class="hero"><div class="page-wrapper"><div class="headline-white"><h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-white">Learn More</a></div></div></section></xmp>
                     </div>
                 </div>
                 <hr>
@@ -1377,7 +1636,7 @@
                                 </div>
                             </div>
                         </section>
-                        <xmp></xmp>
+                        <xmp><section class="hero" style="background:#0372BC;"><div class="page-wrapper"><div class="headline-center headline-white"><h1>The Ultimate Yachting Experience</h1><p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-white">Learn More</a></div></div></section></xmp>
                     </div>
                 </div>
             </section>
@@ -1442,7 +1701,7 @@
                         <p>Placeholder</p>
                     </div>
                     <div class="col-md-9">
-                        <div style="padding:40px 0px;background:#F5F8FA;">
+                        <div style="padding:48px 0px;background:#F5F8FA;">
                             <div class="pre-wrapper">
                                 <div class="pre-loader">
                                     <i class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue" aria-hidden="true"></i>
@@ -1450,15 +1709,15 @@
                                 </div>
                             </div>
                         </div>
+                        <xmp><div style="padding:48px 0px;background:#F5F8FA;"><div class="pre-wrapper"><div class="pre-loader"><i class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue" aria-hidden="true"></i><h5 class="brand-headline">Page Loading</h5></div></div></div></xmp>
                     </div>
                 </div>
             </section>
             <hr>
             <section id="accordian">
-                <h2>Accordian</h2>
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>Titlebar 2</h3>
+                        <h3>Accordian</h3>
                         <p>Placeholder</p>
                     </div>
                     <div class="col-md-9">
@@ -1466,48 +1725,119 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingOne"  data-toggle="collapse" role="button" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <h4 class="panel-title">
-                                        <a>Collapsible Group Item #1</a>
+                                        <a>Content #1 with bodycopy</a>
+                                        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                       <p>
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </p>
+                                       <h4>Content Title</h4>
+                                       <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingTwo" class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <h4 class="panel-title">
-                                        <a>Collapsible Group Item #2</a>
+                                        <a>Content #2 with rows</a>
+                                        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                                     </h4>
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                       <p>
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </p>
+                                       <div class="row">
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                       </div>
+                                       <div class="row">
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                           <div class="col-md-3">
+                                               <h6>Title</h6>
+                                               <h4>Data Information</h4>
+                                           </div>
+                                       </div>
+                                       <hr>
+                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <h4 class="panel-title">
-                                        <a>Collapsible Group Item #3</a>
+                                        <a>Content #3 with imagery</a>
+                                        <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
                                     </h4>
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                       <p>
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </p>
+                                       <div class="row">
+                                           <div class="col-md-6">
+                                               <div class="panel-image">
+                                                   <img src="https://images.unsplash.com/photo-1480951904597-5387d1c232da?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
+                                               </div>
+                                           </div>
+                                           <div class="col-md-6">
+                                              <h4>Title of the image</h4>
+                                               <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                               <button class="btn btn-primary">Learn More</button>
+                                           </div>
+                                       </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <hr>
+            <section>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Side Nav</h3>
+                        <p>Can be used for search / filter pages.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="side-nav">
+                            <h6>Side Nav Title</h6>
+                            <ul>
+                                <li><a>Clickable Link</a></li>
+                                <li class="side-nav-active"><a>Clickable Link</a></li>
+                                <li><a>Clickable Link</a></li>
+                                <li><a>Clickable Link</a></li>
+                                <li><a>Clickable Link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp><div class="side-nav"><h6>Side Nav Title</h6><ul><li><a>Clickable Link</a></li><li class="side-nav-active"><a>Clickable Link</a></li><li><a>Clickable Link</a></li><li><a>Clickable Link</a></li><li><a>Clickable Link</a></li></ul></div></xmp>
+                    </div>
+                </div>
+                <hr>
             </section>
             <section id="modal">
                 <h2>Modal</h2>
@@ -1544,175 +1874,14 @@
                 </div>
             </section>
             <hr>
-        </div>
-        <div class="col-md-1"></div>
-    </div>  
-
-          
-    <div class="row" style="margin-left:260px;" id="grid">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
-            
-               <!--<section>
-                
-                <p>Text about grid systems</p>
-               <div class="row">
-               </div>
-            </section>
-            <hr>-->
-            <section>
-                <h1>Grid Systems</h1>
-                <h2>Margins</h2>
-                <p>All margins and pading are built on the 8px </p>
-                <div class="row">
-                    <div class="col-md-2">
-                        <h5>8px</h5>
-                        <div class="margin-8"></div>
-                        <p>Should be used for margins between the h5, h6, and body copy. This is the least amount of spacing.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>16px</h5>
-                        <div class="margin-16"></div>
-                        <p>16px margins and padding should be used for info cards.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>24px</h5>
-                        <div class="margin-24"></div>
-                        <p>Should be used as a spacing measurement between info-cards.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>32px</h5>
-                        <div class="margin-32"></div>
-                        <p>32px should be used sparingly, when spacing out multiple elements.</p>
-                    </div>
-                    <div class="col-md-2">
-                        <h5>48px</h5>
-                        <div class="margin-48"></div>
-                        <p>This measurement should be used for the top and bottom padding for main sections. This gives the page enough breathing room, letting the user know that the content is a contained idea.</p>
-                    </div>
-                </div> 
-            </section>
-               
-            
-        </div>
-        <div class="col-md-1"></div>
-    </div>
-       
-    <div class="row" style="margin-left:260px;">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
-            <section id="navigation">
-                <h1>Navigation Elements</h1>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Navigation</h2>
-                        <p class="p-width">Our navigation allows users to sign into our system, as well giving them search features, and the ability to jump directly to the main marketing pages. Due to the fact that our local systems are run off of angular, the navigations on these page are purely static and should only be used as placeholders in design.</p>
-                        <div class="navbar" role="navigation">
-                            <div class="navbar-header">
-                                <a class="navbar-brand" href="#"><img src="assets/logo.png" height="40px" width="195px"></a>
-                                <div class="nav-links">
-                                    <button>
-                                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                                    </button>
-                                    <button>
-                                        <i class="fa fa-search fa-lg" aria-hidden="true"></i> 
-                                    </button>
-                                    <button class="mobileHide">
-                                        <i class="fa fa-sign-in" aria-hidden="true" style="margin-right:10px;"></i>Sign In
-                                    </button>
-                                    <button class="mobileHide">
-                                        <i class="fa fa-user-plus" aria-hidden="true" style="margin-right:10px;"></i>Create Account
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr style="margin-top:60px;">
-                <div class="row" id="footer">
-                    <div class="col-md-12">
-                        <h2>Footer</h2>
-                        <div class="float">
-                            <div class="footer">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/footer_logo_white.png" class="img-responsive" style="min-width:250px;max-width:300px;" />
-                                        <p class="quote">"Luxury Yacht Group provides sales, charter, management and crew services to luxury yachts and their owners around the world."</p>
-                                    </div>
-                                    <div class="col-md-1 mobile-center m-l-3p">
-                                        <h5>COMPANY</h5>
-                                        <ul>
-                                            <li><a href="https://www.luxyachts.com/about-us">About</a></li>
-                                            <li><a href="https://www.luxyachts.com/site/map">Sitemap</a></li>
-                                            <li><a href="https://www.luxyachts.com/contact-us">Contact</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-1 mobile-center m-l-1p">
-                                        <h5>MAIN</h5>
-                                        <ul>
-                                            <li><a href="https://www.luxyachts.com/sales">Sales</a></li>
-                                            <li><a href="https://www.luxyachts.com/charter">Charter</a></li>
-                                            <li><a href="https://www.luxyachts.com/management">Management</a></li>
-                                            <li><a href="https://www.luxyachts.com/crew">Crew</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-2 mobile-center m-l-1p footer-fix">
-                                        <h5>CONNECT</h5>
-                                        <ul>
-                                            <li>Fort Lauderdale: <span>+1 954 525 9959</span></li>
-                                            <li>UK: <span>+44 (0) 238 000 9959</span></li>
-                                            <li>San Diego: <span>+1 858 224 2789</span></li>
-                                            <li>Annapolis: <span>+1 443 808 0717</span></li>
-                                            <li>Antibes: <span>+33 (0) 489 120 970</span></li>
-                                            <li>Mallorca: <span>+34 (871) 151211</span></li>
-                                            <li>Auckland: <span>+64 (0) 9 282 4530</span></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-md-3 mobile-center m-l-1p">
-                                        <h5>SOCIAL</h5>
-                                        <div class="footerSocial">
-                                            <a href="mailto:info@luxyachts.com" target="_blank">
-                                                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
-                                            </a>
-                                            <a href="https://www.facebook.com/LuxuryYachtGroup/" target="_blank">
-                                                <i class="fa fa-facebook fa-lg" aria-hidden="true" style="margin-top:7px;"></i>
-                                            </a>
-                                            <a href="https://www.instagram.com/luxuryyachtgroup/" target="_blank">
-                                                <i class="fa fa-instagram fa-lg" aria-hidden="true" style="margin-top:6px;"></i>
-                                            </a>
-                                        </div>
-                                        <div class="footerLegal">
-                                            <h5>Copyright ©2001 - 2017 Luxury Yacht Group LLC</h5>
-                                            <a href="https://www.luxyachts.com/Terms-and-Conditions">Terms of Use</a>
-                                            <a href="https://www.luxyachts.com/privacy-policy">Privacy Policy</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h2>Side Nav</h2>
-                        <div class="side-nav">
-                           <h6>Side Nav Title</h6>
-                            <ul>
-                                <li><a>Clickable Link</a></li>
-                                <li class="side-nav-active"><a>Clickable Link</a></li>
-                                <li><a>Clickable Link</a></li>
-                                <li><a>Clickable Link</a></li>
-                                <li><a>Clickable Link</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
+            <section id="author">
                 <div class="row">
                     <div class="col-md-3">
                         <h2>Article Author</h2>
                         <p class="m-b-24">Article cards should be used on the blog articles</p>
+                        
+                    </div>
+                    <div class="col-md-3">
                         <div class="article-author">
                             <div class="author-avatar">
                                 <img src="https://www.luxyachts.com/Media/Default/images/Staff/Mike_Sept2015.jpg">
@@ -1722,15 +1891,16 @@
                                 <h5>Jackson Kiterton</h5>
                             </div>
                         </div>
-                        
+                    </div>
+                    <div class="col-md-6">
+                        <xmp><div class="article-author"><div class="author-avatar"><img src=""></div><div class="author-title"><h6>Posted 3-12-2017 by</h6><h5>Jackson Kiterton</h5></div></div></xmp>
                     </div>
                 </div>
-                
             </section>
         </div>
         <div class="col-md-1"></div>
-    </div>    
-       
+    </div>  
+   
     <div class="row" style="margin-left:260px;" id="templates">
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
@@ -1741,6 +1911,7 @@
                        <h3>Blank Template</h3>
                         <img src="assets/template_blank.png" class="img-responsive" style="margin-bottom:20px;border: 1px solid #D3E0E9;">
                         <a href="_templates/lux_blank_template.html" class="btn btn-primary">View Template</a>
+                        <a href="assets/Lux_Blank_Template.pdf" target="_blank" class="btn btn-secondary">Download PDF</a>
                     </div>
                     <div class="col-md-3">
                         <h3>Basic Template</h3>
