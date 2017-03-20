@@ -125,6 +125,31 @@ ARTICLE AUTHOR
 }
 
 /*******************************************
+TABLE
+/*******************************************/
+.table {
+    width: 100%;
+}
+th{
+    font-size:14px;
+    font-weight:500;
+    margin:8px 0px;
+}
+td {
+    line-height:1.6;
+    font-weight:500;
+    color:#888888;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background:#F5F8FA;
+}
+.table>thead>tr>th {
+    border-bottom:1px solid #D3E0E9;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top:1px solid #D3E0E9;
+}
+/*******************************************
 EPAULET LARGE
 /*******************************************/
 .ep-large {
@@ -182,7 +207,7 @@ BRAND COLORS
 }
 
 /*******************************************
-FONT STYLES
+FONT STYLESta
 /*******************************************/
 h1 {
     font-size:32px;
@@ -236,7 +261,7 @@ BUTTON STYLES
     background:#286090;
 }
 .btn-secondary {
-    border: 1px solid #0372BC;
+    border: 1px solid #D3E0E9;
     color: #0372BC;
     background:#fff;
     transition: all 0.5s ease;
@@ -313,15 +338,14 @@ SMALL TABS
 .nav-tabs a{
     text-decoration: none;
 }
-.nav-tabs>li.active>a {
-    border-top:0px;
-}
-.nav-tabs>li.active>a:hover {
-    margin-top:-1px;
+.nav-tabs>li>a:active,
+.nav-tabs>li>a:hover{
+    background:#F5F8FA;
 }
 .nav-tabs .active{
-    border-top: 1px solid #D3E0E9;
+    border-top:4px solid #0372BC;
     border-bottom:none;
+    margin-top:4px;
 }
 .nav-tabs>li>a {
     border-radius: 0px;
@@ -356,6 +380,7 @@ input {
     border-radius:4px;
     height:34px;
     width:100%;
+    color:#484848;
 }
 .lux-input {
     max-width:200px;
@@ -377,13 +402,19 @@ input {
     width:100%;
     text-align: center;
 }
+.dropdown-toggle {
+    color:#484848;
+}
+.dropdown-toggle:hover {
+    background:#ffffff;
+    color:#484848;
+}
 .dropdown-menu li a {
     color:#0372BC;
     text-decoration: none;
 }
 .dropdown-menu li a:hover {
     background:#F5F8FA;
-    color:#0372BC;
 }
 /*
 .country-phone {
@@ -588,6 +619,24 @@ CAREER PATH
 /*******************************************
 LABELS
 /*******************************************/
+.label-default {
+    background:#888888;
+}
+.label-primary{
+    background:#0372BC;
+}  
+.label-success{
+    background:#2DA94F;
+}
+.label-info{
+    background:#0496F7;
+}
+.label-warning{
+    background:#FDBD20;
+}
+.label-danger{
+    background: #ea4335;
+}
 .label-article {
     float:left;
 }
@@ -945,7 +994,7 @@ RELATED ARTICLE
     width:64px;
     background:Red;
     float:left;
-    overflow:hodden;
+    overflow:hidden;
 }
 .related-img img {
     height: 100%;
@@ -963,10 +1012,9 @@ RELATED ARTICLE
     height:auto;
     width:100%;
 }
-.related-text h5 {
+.related-text h4 {
     margin-top:0px;
     margin-bottom:4px;
-    line-height:1.4;
     color:#484848;
 }
 
