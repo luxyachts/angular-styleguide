@@ -382,16 +382,23 @@ input {
     width:100%;
     color:#484848;
 }
-.lux-input {
+.input-wrapper {
     max-width:200px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
-.lux-input h6 {
+.input-wrapper h6 {
     float:left;
 }
-.lux-input .fa {
+.input-wrapper .fa {
     float:right;
     margin-top:6px;
+}
+.dropdown-wrapper {
+    max-width:200px;
+    margin-bottom: 16px;
+}
+.dropdown-wrapper .fa {
+    float:right;
 }
 .dropdown-toggle {
     width:100%;
@@ -976,7 +983,6 @@ RELATED ARTICLE
 }
 .related-article:hover {
     background:#F5F8FA;
-    
 }
 .related-articles hr{
     margin-bottom:0px;
@@ -1361,7 +1367,6 @@ DASHBOARD - USER BADGE
     margin-bottom:5px
 }
 .user-badge-info h4 {
-    font-weight:600;
     margin-top:5px;
     margin-bottom:2px;
 }
@@ -1370,6 +1375,7 @@ DASHBOARD - USER BADGE
     width:100%;
     margin-top:1px;
     font-size:12px;
+    text-decoration: none;
 }
 .user-badge-info a:hover {
     color:#286090;
@@ -1960,7 +1966,6 @@ height:auto;
     width:300px;
 }
 .next-page-button h6 {
-    margin-bottom:0px;
     width:80%;
 }
 
@@ -2042,7 +2047,6 @@ height:auto;
     margin-left:-15px;
 }
 .info-dept-about li {
-    padding-bottom:8px;
     padding-right:20px;
 }
 .career-section {
@@ -2134,7 +2138,7 @@ height:auto;
 }
 
 /*POSITION STATS*/
-.pos-stats {
+.data-card {
     width:100%;
     padding:18px 24px;
     border: 1px solid #D3E0E9;
@@ -2142,11 +2146,11 @@ height:auto;
     float:left;
     border-radius:2px;
 }
-.pos-stats a {
+.data-card a {
     float:left;
     margin:8px 0px;
 }
-.pos-stats h3 {
+.data-card h3 {
     margin-top:8px;
     color:#0372bc;
 }

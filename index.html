@@ -73,13 +73,12 @@
                     <li><a href="#article-hero">Article Hero</a></li>
                     <li><a href="#image-slider">Image Slider</a></li>
                     <li><a href="#preloader">Preloader</a></li>
-                    <li><a href="#article-hero">Article Hero</a></li>
                     <li><a href="#accordian">Accordian</a></li>
                     <li><a href="#modal">Modal</a></li>
                     <li><a href="#author">Author</a></li>
                     <li><a href="#tables">Tables</a></li>
+                    <li><a href="#userbadge">User Badge</a></li>
                    <!--
-                    <li>User Badge</li>
                     <li>Items Selection</li>
                     <li>Position Card</li>
                     <li>Add Position</li>
@@ -856,13 +855,28 @@
                <p class="p-width">inputs are used throughout our crew and emplyer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
                 <hr>
                     <div class="row">
+                      <div class="col-md-3">
+                          <h3>Sample input with tooltip</h3>
+                      </div>
                        <div class="col-md-3 m-b-24">
-                          <div class="lux-input">
+                          <div class="input-wrapper">
                                <h6>Input Title</h6> 
                                <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i>
                                <input class="input-wrapper" placeholder="Type Here">
                            </div>
-                           <xmp><div class="lux-input"><h6>Input Title</h6><i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i><input class="input-wrapper" placeholder="Type Here"></div></xmp>
+                       </div>
+                       <div class="col-md-6">
+                           <xmp>
+                               <div class="input-wrapper">
+                                   <h6>Input Title</h6> 
+                                   <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i>
+                                   <input class="input-wrapper" placeholder="Type Here">
+                               </div>
+                           </xmp>
+                       </div>
+                       <hr>
+                       <div class="col-md-3">
+                           <h3>Sample dropdown</h3>
                        </div>
                        <div class="col-md-3 m-b-24">
                            <h6>Dropdown Title</h6> 
@@ -877,7 +891,21 @@
                                    <li><a href="#">Something else here</a></li>
                                </ul>
                            </div>
-                           <xmp><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Dropdown<span class="caret"></span></button><ul class="dropdown-menu" aria-labelledby="dropdownMenu1"><li><a href="#">Action</a></li><li><a href="#">Another action</a></li><li><a href="#">Something else here</a></li></ul></div></xmp>
+                       </div>
+                       <div class="col-md-6">
+                           <xmp>
+                               <div class="dropdown">
+                                   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                       Dropdown
+                                       <span class="caret"></span>
+                                   </button>
+                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                       <li><a href="#">Action</a></li>
+                                       <li><a href="#">Another action</a></li>
+                                       <li><a href="#">Something else here</a></li>
+                                   </ul>
+                               </div>
+                           </xmp>
                        </div>
                        <!--
                        <div class="col-md-3 m-b-24">
@@ -1610,6 +1638,27 @@
                                 <div class="info-card-text">
                                     <a class="info-text-center"><h4>Professional Crew Placement</h4></a>
                                 </div>
+                            </div>
+                        </xmp>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Data Card</h3>
+                        <p>Data cards are used for snippits of important data.</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6 col-ss-12">
+                        <div class="data-card">
+                            <h6>Salary and longevity numbers based on:</h6>
+                            <h3>9999</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp>
+                            <div class="data-card">
+                                <h6>Salary and longevity numbers based on:</h6>
+                                <h3>9999</h3>
                             </div>
                         </xmp>
                     </div>
@@ -2381,11 +2430,10 @@
                 <hr>
             </section>
             <section id="modal">
-                <h2>Modal</h2>
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>Titlebar 2</h3>
-                        <p>Placeholder</p>
+                        <h2>Modal</h2>
+                        <p>We use the standard modals for additional verification on the user side, or condese flows that do not justify a full page design/</p>
                     </div>
                     <div class="col-md-3">
                         <!-- Button trigger modal -->
@@ -2402,15 +2450,42 @@
                                         <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                                     </div>
                                     <div class="modal-body">
-                                        ...
+                                        Modal content should go here.
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-alert" data-dismiss="modal">Decline</button>
+                                        <button type="button" class="btn btn-primary">Accept</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-md-6">
+                       <xmp>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                                Launch demo modal
+                            </button>
+
+                            <!-- Modal -->
+                           <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                               <div class="modal-dialog" role="document">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                           <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                           Modal content should go here.
+                                       </div>
+                                       <div class="modal-footer">
+                                           <button type="button" class="btn btn-alert" data-dismiss="modal">Decline</button>
+                                           <button type="button" class="btn btn-primary">Accept</button>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                        </xmp>
                     </div>
                 </div>
             </section>
@@ -2420,7 +2495,6 @@
                     <div class="col-md-3">
                         <h2>Article Author</h2>
                         <p class="m-b-24">Article cards should be used on the blog articles</p>
-                        
                     </div>
                     <div class="col-md-3">
                         <div class="article-author">
@@ -2453,8 +2527,6 @@
                 <div class="row">
                     <div class="col-md-3">
                         <h2>Table</h2>
-                        <p class="m-b-24">Cotent about table</p>
-
                     </div>
                     <div class="col-md-9">
                         <table class="table table-striped">
@@ -2505,6 +2577,113 @@
                                 </tr>
                             </tbody>
                         </table>
+                        <xmp>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Lastname</th>
+                                        <th>Email</th>
+                                        <th>Phone Number</th>
+                                        <th>Attachments</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>888-888-8888</td>
+                                        <td><a>Upload</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>888-888-8888</td>
+                                        <td><a>Edit</a> | <a class="brand-alert">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>888-888-8888</td>
+                                        <td><a>Edit</a> | <a class="brand-alert">Delete</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>888-888-8888</td>
+                                        <td><a>Upload</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Smith</td>
+                                        <td>john@example.com</td>
+                                        <td>888-888-8888</td>
+                                        <td><a>Edit</a> | <a class="brand-alert">Delete</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </xmp>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="userbadge">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>User Badge</h3>
+                        <p>The user badge is mainly used on the user and employer dashboard. It halpes the user idenitify their most important information, as well as acting as a navigaiton element that allows the user to quickly switch between the main views.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user-badge">
+                            <div class="user-profile">
+                                <img src="https://www.luxyachts.com/Media/Default/images/Staff/Mike_Sept2015.jpg">
+                            </div>
+                            <div class="user-badge-info">
+                                <h6>ID# 123456</h6>
+                                <h4>Jennie Smith</h4>
+                                <a class="brand-blue">+1 808-721-3896</a>
+                                <a class="brand-blue">Test@gmail.com</a>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-primary m-r-20">
+                                    <i class="fa fa-anchor" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary m-r-20">
+                                    <i class="fa fa-ship" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp>
+                            <div class="user-badge">
+                                <div class="user-profile"></div>
+                                <div class="user-badge-info">
+                                    <h6>ID# 123456</h6>
+                                    <h4>Jennie Smith</h4>
+                                    <a class="brand-blue">+1 808-721-3896</a>
+                                    <a class="brand-blue">Test@gmail.com</a>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-secondary m-r-20 badge-active">
+                                        <i class="fa fa-anchor" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary m-r-20">
+                                        <i class="fa fa-ship" aria-hidden="true"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-secondary">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </xmp>
                     </div>
                 </div>
             </section>
