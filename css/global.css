@@ -233,6 +233,7 @@ h5 {
     font-size:14px;
     font-weight:500;
     margin:8px 0px;
+    line-height: 1.4;
 }
 h6 {
     font-size:12px;
@@ -650,8 +651,9 @@ LABELS
     float:left;
 }
 .article-labels {
-    width:100%;
-    margin-bottom:24px;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 16px 0px 24px 24px;
 }
 
 /*******************************************
@@ -894,6 +896,9 @@ INFO CARDS
 }
 .info-card-text {
     padding:16px;
+}
+.info-card-text a {
+    text-decoration: none;
 }
 .info-text-center {
     text-align: center;

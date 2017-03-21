@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/styleguide.css"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    
     <title>Luxury Yacht Group Styleguide</title>
 </head>
 <body>
@@ -20,6 +19,7 @@
             </div>
         <ul style="list-style:none;padding:20px;">
             <li><h4><a href="#introduction">Introduction</a></h4></li>
+            <li><h4><a href="#templates">Premade Templates</a></h4></li>
             <li><h4><a href="#colors">Colors</a></h4></li>
             <li><h4><a href="#typography">Typography</a></h4></li>
                 <ol>
@@ -61,7 +61,6 @@
                 <li><a href="#navigation">Navigation</a></li>
                 <li><a href="#footer">Footer</a></li>
             </ol>
-            <li><h4><a href="#templates">Premade Templates</a></h4></li>
             <li><h4><a href="#modules">Modules</a></h4></li>
                 <ol>
                     <li><a href="#container">Container</a></li>
@@ -365,7 +364,7 @@
                        </ol>
                    </div>
                    <div class="col-md-4">
-                       <h3>Modifier List</h3>
+                       <h3>Modifier List Title</h3>
                        <ul class="modifiers">
                            <li><div class="list-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>List Item</li>
                            <li><div class="list-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>List Item</li>
@@ -383,9 +382,6 @@
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
            <section id="mainbuttons">
-                <h1>Button Styles</h1>
-                <p>Placeholder</p>
-                <hr>
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Text Buttons</h2>
@@ -479,16 +475,37 @@
             <hr>
             <section id="tooltips">
                 <h2>Tool Tips</h2>
-                <p class="p-width">Tooltips are used for adding additional information about subjects and inputs. The content within the toolip should be clear and concise.</p>
+                <p class="p-width">Tooltips are used for adding additional information about subjects and inputs. The content within the toolip should be clear and concise. Be sure to include the following script to activate the tooltip.</p>
+                <xmp>
+                   <script>
+                    $(document).ready(function(){
+                        $('[data-toggle="tooltip"]').tooltip(); 
+                    });
+                    </script>
+                </xmp>
+                <hr>
                 <div class="row">
                     <div class="col-md-3">
                         <h5>Tooltip on text</h5>
-                        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
                     </div>
                     <div class="col-md-3">
+                        <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp><a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a></xmp>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
                         <h5>Tooltip on icon</h5>
-                        <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i>
                         <p>The tooltip icon should be used where there is not enough space in the UI to clearly explain an idea. An example of this would be next to an input.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i>
+                    </div>
+                    <div class="col-md-6">
+                        <xmp><i class="fa fa-info-circle brand-blue" aria-hidden="true" data-toggle="tooltip" title="Hooray!"></i></xmp>
                     </div>
                 </div>
             </section>
@@ -499,15 +516,15 @@
                         <h2>Breadcrumb</h2>
                         <p>Breadcrumbs are uses throughout the interior marketing pages, letting the user know how they got to their current page, and allows them to jump back to those previous page with a single click.</p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-3">
                         <ul class="breadcrumb">
-                            <li><a href="">Yacht Department Directory</a></li>
                             <li><a href="">Yacht Department Directory</a></li>
                             <li class="brand-text">Interior Department</li>
                         </ul>
+                    </div>
+                    <div class="col-md-6">
                         <xmp>
                             <ul class="breadcrumb">
-                                <li><a href="">Yacht Department Directory</a></li>
                                 <li><a href="">Yacht Department Directory</a></li>
                                 <li class="brand-text">Interior Department</li>
                             </ul>
@@ -679,7 +696,6 @@
               <div class="row">
                   <div class="col-md-3">
                       <p class="p-width">Mobile download buttons should only be visible under 768 width screens, and are used as a secondary viewing method for larger content that does not scale well on mobile. The link should open open up a .PDf or .SVG in a new tab and should allow the user to zoom in and out of the document.<br><br>Mobile buttons should always be used outside of the .row, so that it fits the full width of the screen.</p>
-                      <xmp><div class="mobile-download"><button type="submit"><i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic</button></div></xmp>
                   </div>
                   <div class="col-md-9">
                      <p class="show-768 scale-text">Scale down screen to view button</p>
@@ -688,6 +704,13 @@
                               <i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic
                           </button>
                       </div>
+                      <xmp>
+                          <div class="mobile-download">
+                              <button type="submit">
+                                  <i class="fa fa-search-plus fa-lg m-r-10" aria-hidden="true"></i>Click to view the infographic
+                              </button>
+                          </div>
+                      </xmp>
                   </div>
               </div>
             </section>
@@ -852,7 +875,7 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
            <section>
                <h2>Inputs</h2>
-               <p class="p-width">inputs are used throughout our crew and emplyer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
+               <p class="p-width">inputs are used throughout our crew and employer dashboard, as well as the crew search. The inputs have a max-width, and should alsways be used within a col-md-3 so that we have a max of 4 on each line.</p>
                 <hr>
                     <div class="row">
                       <div class="col-md-3">
@@ -1319,9 +1342,7 @@
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
 
             <section>
-                <h1>Grid Systems</h1>
-                <hr>
-                <h2 id="responsive">Repsonsive Breakpoints</h2>
+                <h2 id="responsive">Responsive Breakpoints</h2>
                 <p>Text about grid systems</p>
                 <div class="row">
                     <div class="col-md-3">
@@ -1374,8 +1395,15 @@
                     </div>
                 </div> 
             </section>
-
-
+            <hr>
+            <section>
+                <h2>Content column breaks</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        CONTENT HERE
+                    </div>
+                </div>
+            </section>
         </div>
         <div class="col-md-1"></div>
     </div>
@@ -1384,7 +1412,6 @@
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;">
             <section>
-                <h1>Navigation Elements</h1>
                 <div class="row">
                     <div class="col-md-12">
                         <h2>Navigation</h2>
@@ -1483,21 +1510,19 @@
         <div class="col-md-1"></div>
         <div class="col-md-10" style="background:#FFF;border:1px solid #D3E0E9;margin-top:20px;"> 
             <section id="modules">
-                <h1>Modules</h1> 
+                <h2>Modules</h2> 
                 <hr>
-                <h2 id="container">Content container</h2>
-                <p></p>
-                <div class="row">
+                <div class="row" id="container">
                    <div class="col-md-3">
                        <h3>Content Wrapper</h3>
                        <p>Contente wrapper should be used as a parent to the .row groups, and should wrapper all content blocks.</p>
                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <div class="content">
                             This is a content wrapper
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-6">
                         <xmp><div class="content"></div></xmp>
                     </div>
                 </div>
@@ -1715,7 +1740,8 @@
                                         <img src="https://images.unsplash.com/photo-1452630499973-8c722063e8a7?dpr=1&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=">
                                     </div>
                                     <div class="related-text">
-                                        <h5>This is the title for an article This is the title for an article</h5>
+                                        <h5>This is the title for an article This is the title for an article. This is the title for an article This is the title for an article.</h5>
+                                        <h6>Oct. 29th, 2016</h6>
                                     </div>
                                 </div>
                             </a>
@@ -1726,6 +1752,7 @@
                                 </div>
                                 <div class="related-text">
                                     <h5>This is the title for an article</h5>
+                                    <h6>Oct. 29th, 2016</h6>
                                 </div>
                             </div>
                             </a>
@@ -1736,6 +1763,7 @@
                                 </div>
                                 <div class="related-text">
                                     <h5>This is the title for an article</h5>
+                                    <h6>Oct. 29th, 2016</h6>
                                 </div>
                             </div>
                             </a>
@@ -1746,6 +1774,7 @@
                                 </div>
                                 <div class="related-text">
                                     <h5>This is the title for an article</h5>
+                                    <h6>Oct. 29th, 2016</h6>
                                 </div>
                             </div>
                             </a>
@@ -1761,7 +1790,8 @@
                                             <img src="https://images.unsplash.com/photo-1452630499973-8c722063e8a7?dpr=1&auto=format&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb&crop=">
                                         </div>
                                         <div class="related-text">
-                                            <h5>This is the title for an article This is the title for an article</h5>
+                                            <h5>This is the title for an article This is the title for an article. This is the title for an article This is the title for an article.</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1772,6 +1802,7 @@
                                         </div>
                                         <div class="related-text">
                                             <h5>This is the title for an article</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1782,6 +1813,7 @@
                                         </div>
                                         <div class="related-text">
                                             <h5>This is the title for an article</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1792,6 +1824,7 @@
                                         </div>
                                         <div class="related-text">
                                             <h5>This is the title for an article</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1812,7 +1845,8 @@
                             <a>
                                 <div class="related-article">
                                     <div class="related-text-only">
-                                        <h5>This is the title for an article This is the title for an article.</h5>
+                                        <h5>This is the title for an article This is the title for an article. This is the title for an article This is the title for an article.</h5>
+                                        <h6>Oct. 29th, 2016</h6>
                                     </div>
                                 </div>
                             </a>
@@ -1820,6 +1854,7 @@
                                 <div class="related-article">
                                     <div class="related-text-only">
                                         <h5>This is the title for an article This is the title for an article.</h5>
+                                        <h6>Oct. 29th, 2016</h6>
                                     </div>
                                 </div>
                             </a>
@@ -1827,6 +1862,7 @@
                                 <div class="related-article">
                                     <div class="related-text-only">
                                         <h5>This is the title for an article.</h5>
+                                        <h6>Oct. 29th, 2016</h6>
                                     </div>
                                 </div>
                             </a>
@@ -1834,6 +1870,7 @@
                                 <div class="related-article">
                                     <div class="related-text-only">
                                         <h5>This is the title for an article.</h5>
+                                        <h6>Oct. 29th, 2016</h6>
                                     </div>
                                 </div>
                             </a>
@@ -1846,7 +1883,8 @@
                                 <a>
                                     <div class="related-article">
                                         <div class="related-text-only">
-                                            <h5>This is the title for an article This is the title for an article.</h5>
+                                            <h5>This is the title for an article This is the title for an article. This is the title for an article This is the title for an article.</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1854,6 +1892,7 @@
                                     <div class="related-article">
                                         <div class="related-text-only">
                                             <h5>This is the title for an article This is the title for an article.</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1861,6 +1900,7 @@
                                     <div class="related-article">
                                         <div class="related-text-only">
                                             <h5>This is the title for an article.</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -1868,6 +1908,7 @@
                                     <div class="related-article">
                                         <div class="related-text-only">
                                             <h5>This is the title for an article.</h5>
+                                            <h6>Oct. 29th, 2016</h6>
                                         </div>
                                     </div>
                                 </a>
@@ -2636,8 +2677,8 @@
                         </xmp>
                     </div>
                 </div>
-                
             </section>
+            <hr>
             <section id="userbadge">
                 <div class="row">
                     <div class="col-md-3">
