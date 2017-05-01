@@ -26,12 +26,19 @@
                     <h4><a href="#colors">Colors</a></h4>
                 </li>
             </ul>
-            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+            
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Typography</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapseTwo">
+                                Typography
+                                <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseOne" role="tabpanel">
+                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -48,10 +55,15 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading collapsed" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Buttons</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                                Buttons
+                                <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
+                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -83,10 +95,15 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Icons</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapseTwo">
+                                Icons
+                                <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseFour" role="tabpanel">
+                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -112,10 +129,15 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Grid Systems</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapseTwo">
+                                Grid Systems
+                                <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseFive" role="tabpanel">
+                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -129,10 +151,15 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Navigation</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapseTwo">
+                                Navigation
+                                <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseSix" role="tabpanel">
+                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -146,10 +173,14 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                        <h4 class="panel-title"><a>Modules</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapseTwo">
+                                Modules <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span>
+                            </a>
+                        </h4>
                     </div>
-                    <div aria-labelledby="headingOne" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
+                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                         <div class="panel-body">
                             <ol>
                                 <li>
@@ -476,23 +507,23 @@
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Primary button style</h5><button class="btn btn-primary">Button Link</button>
-                            <pre><button class="btn btn-primary">Button Link</button></pre>
+                            <xmp><button class="btn btn-primary">Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Secondary button style</h5><button class="btn btn-secondary">Button Link</button>
-                            <pre><button class="btn btn-secondary">Button Link</button></pre>
+                            <xmp><button class="btn btn-secondary">Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Disabled button style</h5><button class="btn btn-disabled">Button Link</button>
-                            <pre><button class="btn btn-disabled">Button Link</button></pre>
+                            <xmp><button class="btn btn-disabled">Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Alert button style</h5><button class="btn btn-alert">Button Link</button>
-                            <pre><button class="btn btn-alert">Button Link</button></pre>
+                            <xmp><button class="btn btn-alert">Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Alert button style</h5><button class="btn btn-white">Button Link</button>
-                            <pre><button class="btn btn-white">Button Link</button></pre>
+                            <xmp><button class="btn btn-white">Button Link</button></xmp>
                         </div>
                     </div>
                     <div class="row" id="white-icon">
@@ -502,19 +533,19 @@
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Open in new tab</h5><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-external-link m-r-5"></i> Button Link</button>
-                            <pre><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-external-link m-r-5"></i> Button Link</button></pre>
+                            <xmp><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-external-link m-r-5"></i> Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Secondary button style w/ icon</h5><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button>
-                            <pre><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button></pre>
+                            <xmp><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Disabled button style w/ icon</h5><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button>
-                            <pre><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button></pre>
+                            <xmp><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i> Button Link</button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Alert button style w/ icon</h5><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i>Button Link</button>
-                            <pre><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i>Button Link</button></pre>
+                            <xmp><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle m-r-5"></i>Button Link</button></xmp>
                         </div>
                     </div>
                     <div class="row">
@@ -524,19 +555,19 @@
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Primary button icon</h5><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-info-circle"></i></button>
-                            <pre><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-info-circle"></i></button></pre>
+                            <xmp><button class="btn btn-primary"><i aria-hidden="true" class="fa fa-info-circle"></i></button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Secondary button icon</h5><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle"></i></button>
-                            <pre><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle"></i> </button></pre>
+                            <xmp><button class="btn btn-secondary"><i aria-hidden="true" class="fa fa-info-circle"></i> </button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Disabled button icon</h5><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle"></i></button>
-                            <pre><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle"></i></button></pre>
+                            <xmp><button class="btn btn-disabled"><i aria-hidden="true" class="fa fa-info-circle"></i></button></xmp>
                         </div>
                         <div class="col-md-2 m-b-24">
                             <h5>Alert button icon</h5><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle"></i></button>
-                            <pre><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle"></i></button></pre>
+                            <xmp><button class="btn btn-alert"><i aria-hidden="true" class="fa fa-info-circle"></i></button></xmp>
                         </div>
                     </div>
                 </section>
@@ -549,14 +580,14 @@
                 <section id="tooltips">
                     <h2>Tool Tips</h2>
                     <p class="p-width">Tooltips are used for adding additional information about subjects and inputs. The content within the toolip should be clear and concise. Be sure to include the following script to activate the tooltip.</p>
-                    <pre>                  
+                    <xmp>                  
 <script>
 
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
 </script>
-               </pre>
+               </xmp>
                     <hr>
                     <div class="row">
                         <div class="col-md-3">
@@ -564,7 +595,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-9">
                             <a data-toggle="tooltip" href="#" title="Hooray!">Hover over me</a>
-                            <pre><a data-toggle="tooltip" href="#" title="Hooray!">Hover over me</a></pre>
+                            <xmp><a data-toggle="tooltip" href="#" title="Hooray!">Hover over me</a></xmp>
                         </div>
                     </div>
                     <hr>
@@ -575,7 +606,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-9">
                             <i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Hooray!"></i>
-                            <pre><i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Hooray!"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Hooray!"></i></xmp>
                         </div>
                     </div>
                 </section>
@@ -593,16 +624,14 @@ $(document).ready(function(){
                                 </li>
                                 <li class="brand-text">Interior Department</li>
                             </ul>
-                            <pre>                            </pre>
+                            <xmp>                          
                             <ul class="breadcrumb">
                                 <li>
                                     <a href="">Yacht Department Directory</a>
                                 </li>
                                 <li class="brand-text">Interior Department</li>
                             </ul>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -628,7 +657,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default" type="button">Right</button>
                                 </div>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
                             <div aria-label="..." class="btn-group btn-group-justified" role="group">
                                 <div class="btn-group" role="group">
                                     <button class="btn btn-default btn-active" type="button">Left</button>
@@ -640,9 +669,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default" type="button">Right</button>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -663,7 +690,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Right</span></button>
                                 </div>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
                             <div aria-label="..." class="btn-group btn-group-justified" role="group">
                                 <div class="btn-group" role="group">
                                     <button class="btn btn-default btn-active" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Left</span></button>
@@ -675,9 +702,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Right</span></button>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -698,7 +723,7 @@ $(document).ready(function(){
                                     <a data-toggle="tab" href="#menu2">Tab Title 2</a>
                                 </li>
                             </ul>
-                            <pre>                            </pre>
+                            <xmp>
                             <ul class="nav nav-tabs">
                                 <li class="active">
                                     <a data-toggle="tab" href="#home">Tab Title 1</a>
@@ -710,9 +735,7 @@ $(document).ready(function(){
                                     <a data-toggle="tab" href="#menu2">Tab Title 2</a>
                                 </li>
                             </ul>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -733,7 +756,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default tab-inactive" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Right</span></button>
                                 </div>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
                             <div aria-label="..." class="btn-group btn-group-justified" role="group">
                                 <div class="btn-group" role="group">
                                     <button class="btn btn-default tab-large" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Left</span></button>
@@ -745,9 +768,7 @@ $(document).ready(function(){
                                     <button class="btn btn-default tab-inactive" type="button"><i aria-hidden="true" class="fa fa-cog fa-lg"></i><span>Right</span></button>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -766,13 +787,11 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                                    </pre>
+                            <xmp>
                             <div class="input-wrapper">
                                 <h6>Input Title</h6><i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i> <input class="input-wrapper" placeholder="Type Here">
                             </div>
-                            <pre>
-
-                            </pre>
+                           </xmp>
                         </div>
                         <hr>
                         <div class="col-md-3">
@@ -799,7 +818,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                                    </pre>
+                            <xmp>
                             <div class="dropdown-wrapper">
                                 <i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i>
                                 <h6>Dropdown Title</h6>
@@ -818,9 +837,7 @@ $(document).ready(function(){
                                     </ul>
                                 </div>
                             </div>
-                            <pre>
-
-                            </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -865,13 +882,11 @@ $(document).ready(function(){
                             <div class="mobile-download">
                                 <button type="submit"><i aria-hidden="true" class="fa fa-search-plus fa-lg m-r-10"></i>Click to view the infographic</button>
                             </div>
-                            <pre>                          </pre>
+                            <xmp>
                             <div class="mobile-download">
                                 <button type="submit"><i aria-hidden="true" class="fa fa-search-plus fa-lg m-r-10"></i>Click to view the infographic</button>
                             </div>
-                            <pre>
-
-                  </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1004,13 +1019,11 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                               </pre>
+                            <xmp>
                             <div class="input-wrapper">
                                 <h6>Input Title</h6><i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i> <input class="input-wrapper" placeholder="Type Here">
                             </div>
-                            <pre>
-
-                       </pre>
+                            </xmp>
                         </div>
                         <hr>
                         <div class="col-md-3">
@@ -1037,7 +1050,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                               </pre>
+                            <xmp>
                             <div class="dropdown-wrapper">
                                 <i aria-hidden="true" class="fa fa-info-circle brand-blue" data-toggle="tooltip" title="Not all inputs need to have the tooltip. Simply delete the a tag and use the rest of the code."></i>
                                 <h6>Dropdown Title</h6>
@@ -1056,9 +1069,7 @@ $(document).ready(function(){
                                     </ul>
                                 </div>
                             </div>
-                            <pre>
-
-                       </pre>
+                            </xmp>
                         </div><!--
 <div class="col-md-3 m-b-24">
 <h5>Phone number input</h5> 
@@ -1092,47 +1103,47 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-2">
                             <h5>Settings</h5><i aria-hidden="true" class="fa fa-cog brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-cog"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-cog"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Complete</h5><i aria-hidden="true" class="fa fa-bookmark-o brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-bookmark-o"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-bookmark-o"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Pending</h5><i aria-hidden="true" class="fa fa-bookmark brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-bookmark"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-bookmark"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Pending</h5><i aria-hidden="true" class="fa fa-info-circle brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-info-circle"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-info-circle"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Refresh</h5><i aria-hidden="true" class="fa fa-refresh brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-refresh"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-refresh"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Filter</h5><i aria-hidden="true" class="fa fa-filter brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-filter"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-filter"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Sort</h5><i aria-hidden="true" class="fa fa-sort-amount-desc brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-sort-amount-desc"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-sort-amount-desc"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Edit</h5><i aria-hidden="true" class="fa fa-pencil-square-o brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-pencil-square-o"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-pencil-square-o"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Search</h5><i aria-hidden="true" class="fa fa-search brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-search"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-search"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Trash</h5><i aria-hidden="true" class="fa fa-trash brand-alert"></i>
-                            <pre><i aria-hidden="true" class="fa fa-trash"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-trash"></i></xmp>
                         </div>
                         <div class="col-md-2">
                             <h5>Open in new tab</h5><i aria-hidden="true" class="fa fa-trash brand-blue"></i>
-                            <pre><i aria-hidden="true" class="fa fa-external-link"></i></pre>
+                            <xmp><i aria-hidden="true" class="fa fa-external-link"></i></xmp>
                         </div>
                     </div>
                 </section>
@@ -1146,48 +1157,44 @@ $(document).ready(function(){
                             <div class="status-icon status-pending">
                                 <i aria-hidden="true" class="fa fa-clock-o fa-lg"></i>
                             </div>
-                            <pre></pre>
+                            <xmp>
                             <div class="status-icon status-pending">
                                 <i aria-hidden="true" class="fa fa-clock-o fa-lg"></i>
                             </div>
-                            <pre>
-                   </pre>
+                            </xmp>
                         </div>
                         <div class="col-md-3">
                             <h5>Complete</h5>
                             <div class="status-icon status-complete">
                                 <i aria-hidden="true" class="fa fa-check fa-lg"></i>
                             </div>
-                            <pre></pre>
+                            <xmp>
                             <div class="status-icon status-complete">
                                 <i aria-hidden="true" class="fa fa-check fa-lg"></i>
                             </div>
-                            <pre>
-                   </pre>
+                            </xmp>
                         </div>
                         <div class="col-md-3">
                             <h5>Pending</h5>
                             <div class="status-icon status-progress">
                                 <div class="progress-bottom"></div>
                             </div>
-                            <pre></pre>
+                            <xmp>
                             <div class="status-icon status-progress">
                                 <div class="progress-bottom"></div>
                             </div>
-                            <pre>
-                   </pre>
+                            </xmp>
                         </div>
                         <div class="col-md-3">
                             <h5>Pending</h5>
                             <div class="status-icon status-alert">
                                 <i aria-hidden="true" class="fa fa-ban fa-lg"></i>
                             </div>
-                            <pre></pre>
+                            <xmp>
                             <div class="status-icon status-alert">
                                 <i aria-hidden="true" class="fa fa-ban fa-lg"></i>
                             </div>
-                            <pre>
-                   </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1199,7 +1206,7 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-3">
                             <h5>Deck 0 stripes</h5><img src="assets/deck_ep_01.svg">
-                            <pre><img src="assets/deck_ep_01.svg"></pre>
+                            <xmp><img src="assets/deck_ep_01.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Junior Deckhand</li>
@@ -1207,7 +1214,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Deck 1 stripe</h5><img src="assets/deck_ep_02.svg">
-                            <pre><img src="assets/deck_ep_02.svg"></pre>
+                            <xmp><img src="assets/deck_ep_02.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Deckhand</li>
@@ -1215,7 +1222,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Deck 2 stripes</h5><img src="assets/deck_ep_03.svg">
-                            <pre><img src="assets/deck_ep_03.svg"></pre>
+                            <xmp><img src="assets/deck_ep_03.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Bosun</li>
@@ -1223,7 +1230,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Deck 3 stripes</h5><img src="assets/deck_ep_04.svg">
-                            <pre><img src="assets/deck_ep_04.svg"></pre>
+                            <xmp><img src="assets/deck_ep_04.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Mate</li>
@@ -1233,7 +1240,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Deck 4 stripes</h5><img src="assets/deck_ep_05.svg">
-                            <pre><img src="assets/deck_ep_05.svg"></pre>
+                            <xmp><img src="assets/deck_ep_05.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Junior Captain</li>
@@ -1247,7 +1254,7 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-3">
                             <h5>Engineer 1 stripe</h5><img src="assets/engineering_ep_02.svg">
-                            <pre><img src="assets/engineering_ep_02.svg"></pre>
+                            <xmp><img src="assets/engineering_ep_02.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Junior Engineer (Unlicensed)</li>
@@ -1255,7 +1262,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Engineer 2 stripes</h5><img src="assets/engineering_ep_03.svg">
-                            <pre><img src="assets/engineering_ep_03.svg"></pre>
+                            <xmp><img src="assets/engineering_ep_03.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Electroncs Engineer (ETO)</li>
@@ -1269,7 +1276,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Engineer 3 stripes</h5><img src="assets/engineering_ep_04.svg">
-                            <pre><img src="assets/engineering_ep_04.svg"></pre>
+                            <xmp><img src="assets/engineering_ep_04.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Chief Y4 (&lt;200gt &lt; 1500kw)</li>
@@ -1280,7 +1287,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Engineer 3 stripes</h5><img src="assets/engineering_ep_05.svg">
-                            <pre><img src="assets/engineering_ep_05.svg"></pre>
+                            <xmp><img src="assets/engineering_ep_05.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Chief Engineer Unlimited</li>
@@ -1292,7 +1299,7 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-3">
                             <h5>Interior 0 stripes</h5><img src="assets/interior_ep_01.svg">
-                            <pre><img src="assets/interior_ep_01.svg"></pre>
+                            <xmp><img src="assets/interior_ep_01.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Junior Steward/ess</li>
@@ -1300,7 +1307,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Interior 1 stripe</h5><img src="assets/interior_ep_02.svg">
-                            <pre><img src="assets/interior_ep_02.svg"></pre>
+                            <xmp><img src="assets/interior_ep_02.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Solo Stew</li>
@@ -1309,7 +1316,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Interior 2 stripes</h5><img src="assets/interior_ep_03.svg">
-                            <pre><img src="assets/interior_ep_03.svg"></pre>
+                            <xmp><img src="assets/interior_ep_03.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Steward/ess</li>
@@ -1318,7 +1325,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Interior 3 stripes</h5><img src="assets/interior_ep_04.svg">
-                            <pre><img src="assets/interior_ep_04.svg"></pre>
+                            <xmp><img src="assets/interior_ep_04.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Butler</li>
@@ -1333,7 +1340,7 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-3">
                             <h5>Galley 2 stripes</h5><img src="assets/galley_ep_03.svg">
-                            <pre>img src="assets/galley_ep_03.svg"&gt;</pre>
+                            <xmp>img src="assets/galley_ep_03.svg"&gt;</xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Cook</li>
@@ -1342,7 +1349,7 @@ $(document).ready(function(){
                         </div>
                         <div class="col-md-3">
                             <h5>Interior 3 stripes</h5><img src="assets/galley_ep_04.svg">
-                            <pre><img src="assets/galley_ep_04.svg"></pre>
+                            <xmp><img src="assets/galley_ep_04.svg"></xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Chef</li>
@@ -1355,7 +1362,7 @@ $(document).ready(function(){
                     <div class="row">
                         <div class="col-md-3">
                             <p>The other epaulets should be used for all postiions other then yacht based.</p><img src="assets/other_ep.svg">
-                            <pre>img src="assets/galley_ep_03.svg"&gt;</pre>
+                            <xmp>img src="assets/galley_ep_03.svg"&gt;</xmp>
                             <h6>Used for the following positions</h6>
                             <ul>
                                 <li>Land based positions</li>
@@ -1372,12 +1379,11 @@ $(document).ready(function(){
                         <div class="col-md-3">
                             <h5>Large size epaulet</h5>
                             <div class="ep-large"><img src="assets/galley_ep_04.svg"></div>
-                            <pre></pre>
+                            <xmp>
                             <div class="ep-large">
                                 img src="assets/galley_ep_04.svg"&gt;
                             </div>
-                            <pre>
-                   </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1618,10 +1624,9 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre></pre>
+                            <xmp>
                             <div class="content"></div>
-                            <pre>
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1647,7 +1652,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="info-wrapper">
                                 <div class="info-card-text">
                                     <img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;">
@@ -1655,9 +1660,7 @@ $(document).ready(function(){
                                     <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -1676,7 +1679,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="info-cards">
                                 <div class="info-card-text">
                                     <img src="assets/custom_icons/icon_custom_my.svg" style="max-height:18px;margin-bottom:10px;">
@@ -1684,9 +1687,7 @@ $(document).ready(function(){
                                     <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -1704,16 +1705,14 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="info-cards">
                                 <div class="info-card-text">
                                     <h4>Professional Crew Placement</h4>
                                     <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">Button Link</a>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -1732,7 +1731,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="info-cards">
                                 <div class="info-card-image"><img src="assets/test_image.png"></div>
                                 <div class="info-card-text">
@@ -1740,9 +1739,7 @@ $(document).ready(function(){
                                     <p>Luxury Yacht Group leads the industry in providing professional crew for luxury yachts of all sizes.</p><a class="btn btn-primary">Button Link</a>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -1761,7 +1758,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="info-cards">
                                 <div class="info-card-image-large"><img src="assets/test_image.png"></div>
                                 <div class="info-card-text">
@@ -1769,9 +1766,7 @@ $(document).ready(function(){
                                         <h4>Professional Crew Placement</h4></a>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -1787,14 +1782,12 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="data-card">
                                 <h6>Salary and longevity numbers based on:</h6>
                                 <h3>9999</h3>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1811,13 +1804,11 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="article-labels content">
                                 <h4>Article Tags:</h4><span class="label label-default">Yachting</span> <span class="label label-default">Captain</span> <span class="label label-default">Miami</span>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1863,7 +1854,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="related-articles">
                                 <h4>Related Articles</h4><a>
                                 <div class="related-article">
@@ -1895,9 +1886,7 @@ $(document).ready(function(){
                                     </div>
                                 </div></a>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1937,7 +1926,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                           </pre>
+                            <xmp>
                             <div class="related-articles">
                                 <h4>Related Articles</h4><a>
                                 <div class="related-article">
@@ -1965,9 +1954,7 @@ $(document).ready(function(){
                                     </div>
                                 </div></a>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -1976,10 +1963,9 @@ $(document).ready(function(){
                     <h2>Hero Images</h2>
                     <p>Hero images should be used on the top of marketing pages, and should be contextual to the content on the page.</p>
                     <div class="article-image"><img src="https://images.unsplash.com/photo-1480951904597-5387d1c232da?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="></div>
-                    <pre></pre>
+                    <xmp>
                     <div class="article-image"><img src=""></div>
-                    <pre>
-            </pre>
+                    </xmp>
                 </section>
                 <hr>
                 <section id="image-slider">
@@ -2005,7 +1991,7 @@ $(document).ready(function(){
                                 </div><!-- Left and right controls -->
                                 <a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" data-slide="next" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="carousel slide" data-ride="carousel" id="myCarousel">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators">
@@ -2022,9 +2008,7 @@ $(document).ready(function(){
                                 </div><!-- Left and right controls -->
                                 <a class="left carousel-control" data-slide="prev" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" data-slide="next" href="#myCarousel" role="button"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span></a>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2047,7 +2031,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre class="m-t-20">                            </pre>
+                            <xmp class="m-t-20">
                             <section class="hero">
                                 <div class="page-wrapper">
                                     <div class="headline">
@@ -2056,9 +2040,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -2074,16 +2056,16 @@ $(document).ready(function(){
                                     <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-primary">Learn More</a>
                                 </div>
                             </section>
-                            <pre class="m-t-20">                            </pre>
+                            <xmp class="m-t-20">                        
                             <section class="hero">
                                 <div class="headline-center">
                                     <h1>The Ultimate Yachting Experience</h1>
                                     <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p><a class="btn btn-primary">Learn More</a>
                                 </div>
                             </section>
-                            <pre>
+                            
 
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -2101,7 +2083,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre class="m-t-20">                            </pre>
+                            <xmp class="m-t-20">
                             <section class="hero" style="background:#0372BC;">
                                 <div class="page-wrapper">
                                     <div class="headline-white">
@@ -2110,9 +2092,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -2130,7 +2110,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre>                            </pre>
+                            <xmp>
                             <section class="hero" style="background:#0372BC;">
                                 <div class="page-wrapper">
                                     <div class="headline-center headline-white">
@@ -2139,9 +2119,7 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </section>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2172,7 +2150,27 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
+                                <div class="page-title">
+                                    <div class="row page-wrapper">
+                                        <div class="col-md-12">
+                                            <ul class="breadcrumb">
+                                                <li>
+                                                    <a href="">Breadcrumb 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Breadcrumb 2</a>
+                                                </li>
+                                                <li class="brand-text">Breadcrumb 3</li>
+                                            </ul>
+                                            <div class="headline">
+                                                <h1>The Ultimate Yachting Experience</h1>
+                                                <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xmp>
                             <div class="page-title">
                                 <div class="row page-wrapper">
                                     <div class="col-md-12">
@@ -2192,16 +2190,33 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            <xmp>
+                                <div class="page-title">
+                                    <div class="row page-wrapper">
+                                        <div class="col-md-12">
+                                            <ul class="breadcrumb">
+                                                <li>
+                                                    <a href="">Breadcrumb 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Breadcrumb 2</a>
+                                                </li>
+                                                <li class="brand-text">Breadcrumb 3</li>
+                                            </ul>
+                                            <div class="headline">
+                                                <h1>The Ultimate Yachting Experience</h1>
+                                                <p>Luxury Yacht Group operates the world’s largest crew agency, has developed practical shore support services and offers custom sales and charter programs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-md-3">
                             <h3>Page title with breadcrumb and title</h3>
-                            <p>Placeholder</p>
                         </div>
                         <div class="col-md-9">
                             <div class="page-title">
@@ -2222,7 +2237,26 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>                            </pre>
+                            <xmp>
+                                <div class="page-title">
+                                    <div class="row page-wrapper">
+                                        <div class="col-md-12">
+                                            <ul class="breadcrumb">
+                                                <li>
+                                                    <a href="">Breadcrumb 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Breadcrumb 2</a>
+                                                </li>
+                                                <li class="brand-text">Breadcrumb 3</li>
+                                            </ul>
+                                            <div class="headline">
+                                                <h1>The Ultimate Yachting Experience</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xmp>
                             <div class="page-title">
                                 <div class="row page-wrapper">
                                     <div class="col-md-12">
@@ -2241,9 +2275,26 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            <xmp>
+                                <div class="page-title">
+                                    <div class="row page-wrapper">
+                                        <div class="col-md-12">
+                                            <ul class="breadcrumb">
+                                                <li>
+                                                    <a href="">Breadcrumb 1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Breadcrumb 2</a>
+                                                </li>
+                                                <li class="brand-text">Breadcrumb 3</li>
+                                            </ul>
+                                            <div class="headline">
+                                                <h1>The Ultimate Yachting Experience</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2264,18 +2315,16 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>                            </pre>
-                            <div style="padding:48px 0px;background:#F5F8FA;">
-                                <div class="pre-wrapper">
-                                    <div class="pre-loader">
-                                        <i aria-hidden="true" class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue"></i>
-                                        <h5 class="brand-headline">Page Loading</h5>
+                            <xmp>
+                                <div style="padding:48px 0px;background:#F5F8FA;">
+                                    <div class="pre-wrapper">
+                                        <div class="pre-loader">
+                                            <i aria-hidden="true" class="fa fa-spinner fa-pulse fa-3x fa-fw brand-blue"></i>
+                                            <h5 class="brand-headline">Page Loading</h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2287,12 +2336,17 @@ $(document).ready(function(){
                             <p>Placeholder</p>
                         </div>
                         <div class="col-md-9">
-                            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                          
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                                 <div class="panel panel-default">
-                                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                                        <h4 class="panel-title"><a>Content #1 with bodycopy</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Collapsible Group Item #1
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div aria-labelledby="headingOne" class="panel-collapse collapse in" id="collapse1" role="tabpanel">
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                         <div class="panel-body">
                                             <h4>Content Title</h4>
                                             <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
@@ -2300,10 +2354,14 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div aria-controls="collapseOne" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" id="headingTwo" role="button">
-                                        <h4 class="panel-title"><a>Content #2 with rows</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Collapsible Group Item #2
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="collapse2" role="tabpanel">
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="col-md-3">
@@ -2347,10 +2405,14 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                                 <div class="panel panel-default">
-                                    <div aria-controls="collapseOne" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" id="headingThree" role="button">
-                                        <h4 class="panel-title"><a>Content #3 with imagery</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
+                                    <div class="panel-heading" role="tab" id="headingThree">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Collapsible Group Item #3
+                                            </a>
+                                        </h4>
                                     </div>
-                                    <div aria-labelledby="headingThree" class="panel-collapse collapse" id="collapse3" role="tabpanel">
+                                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                         <div class="panel-body">
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -2365,88 +2427,98 @@ $(document).ready(function(){
                                     </div>
                                 </div>
                             </div>
-                            <pre>                            </pre>
-                            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
-                                <div class="panel panel-default">
-                                    <div aria-controls="collapseOne" aria-expanded="true" class="panel-heading" data-parent="#accordion" data-toggle="collapse" id="headingOne" role="button">
-                                        <h4 class="panel-title"><a>Content #1 with bodycopy</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
-                                    </div>
-                                    <div aria-labelledby="headingOne" class="panel-collapse collapse in" id="collapseOne" role="tabpanel">
-                                        <div class="panel-body">
-                                            <h4>Content Title</h4>
-                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                            <xmp>
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    Collapsible Group Item #1
+                                                </a>
+                                            </h4>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div aria-controls="collapseTwo" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" id="headingTwo" role="button">
-                                        <h4 class="panel-title"><a>Content #2 with rows</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
-                                    </div>
-                                    <div aria-labelledby="headingTwo" class="panel-collapse collapse" id="collapseTwo" role="tabpanel">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <h6>Title</h6>
-                                                    <h4>Data Information</h4>
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div aria-controls="collapseThree" aria-expanded="false" class="collapsed" data-parent="#accordion" data-toggle="collapse" id="headingThree" role="button">
-                                        <h4 class="panel-title"><a>Content #3 with imagery</a> <span><i aria-hidden="true" class="fa fa-chevron-down"></i></span></h4>
-                                    </div>
-                                    <div aria-labelledby="headingThree" class="panel-collapse collapse" id="collapseThree" role="tabpanel">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="panel-image"><img src="https://images.unsplash.com/photo-1480951904597-5387d1c232da?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="></div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <h4>Title of the image</h4>
-                                                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p><button class="btn btn-primary">Learn More</button>
-                                                </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                            <div class="panel-body">
+                                                <h4>Content Title</h4>
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                    Collapsible Group Item #2
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h6>Title</h6>
+                                                        <h4>Data Information</h4>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                    Collapsible Group Item #3
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="panel-image"><img src="https://images.unsplash.com/photo-1480951904597-5387d1c232da?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop="></div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <h4>Title of the image</h4>
+                                                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p><button class="btn btn-primary">Learn More</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2480,30 +2552,28 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
-                            <div class="side-nav">
-                                <h6>Side Nav Title</h6>
-                                <ul>
-                                    <li>
-                                        <a>Clickable Link</a>
-                                    </li>
-                                    <li class="side-nav-active">
-                                        <a>Clickable Link</a>
-                                    </li>
-                                    <li>
-                                        <a>Clickable Link</a>
-                                    </li>
-                                    <li>
-                                        <a>Clickable Link</a>
-                                    </li>
-                                    <li>
-                                        <a>Clickable Link</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <pre>
-
-                    </pre>
+                            <xmp>
+                                <div class="side-nav">
+                                    <h6>Side Nav Title</h6>
+                                    <ul>
+                                        <li>
+                                            <a>Clickable Link</a>
+                                        </li>
+                                        <li class="side-nav-active">
+                                            <a>Clickable Link</a>
+                                        </li>
+                                        <li>
+                                            <a>Clickable Link</a>
+                                        </li>
+                                        <li>
+                                            <a>Clickable Link</a>
+                                        </li>
+                                        <li>
+                                            <a>Clickable Link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </xmp>
                         </div>
                     </div>
                     <hr>
@@ -2529,38 +2599,33 @@ $(document).ready(function(){
                                         </div>
                                         <div class="modal-footer">
                                             <button class="btn btn-alert" data-dismiss="modal" type="button">Decline</button> <button class="btn btn-primary" type="button">Accept</button>
-                                        </div>
+                                        </div> 
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            <!-- Button trigger modal -->
-                            <button class="btn btn-primary" data-target="#myModal" data-toggle="modal" type="button">
-                                Launch demo modal
-                            </button>
-
-                            <!-- Modal -->
-                           </pre>
-                            <div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                                        </div>
-                                        <div class="modal-body">
-                                            Modal content should go here.
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button class="btn btn-alert" data-dismiss="modal" type="button">Decline</button> <button class="btn btn-primary" type="button">Accept</button>
+                            <xmp>
+                                <button class="btn btn-primary" data-target="#myModal" data-toggle="modal" type="button">
+                                    Launch demo modal
+                                </button>
+                                <div aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                Modal content should go here.
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-alert" data-dismiss="modal" type="button">Decline</button> <button class="btn btn-primary" type="button">Accept</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2581,17 +2646,15 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
-                            <div class="article-author">
-                                <div class="author-avatar"><img src="https://www.luxyachts.com/Assets/img/AdminPics/photo_original_12222016102240AMjt@luxyachts.com.jpg"></div>
-                                <div class="author-title">
-                                    <h6>Posted 3-12-2017 by</h6>
-                                    <h5>Jackson Kiterton</h5>
+                            <xmp>
+                                <div class="article-author">
+                                    <div class="author-avatar"><img src="https://www.luxyachts.com/Assets/img/AdminPics/photo_original_12222016102240AMjt@luxyachts.com.jpg"></div>
+                                    <div class="author-title">
+                                        <h6>Posted 3-12-2017 by</h6>
+                                        <h5>Jackson Kiterton</h5>
+                                    </div>
                                 </div>
-                            </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2660,7 +2723,7 @@ $(document).ready(function(){
                                     </tr>
                                 </tbody>
                             </table>
-                            <pre>                            </pre>
+                            <xmp>                            
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
@@ -2719,6 +2782,7 @@ $(document).ready(function(){
                                     </tr>
                                 </tbody>
                             </table>
+                            </xmp>
                         </div>
                     </div>
                 </section>
@@ -2742,7 +2806,7 @@ $(document).ready(function(){
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <pre>                            </pre>
+                            <xmp>
                             <div class="user-badge">
                                 <div class="user-profile"></div>
                                 <div class="user-badge-info">
@@ -2753,9 +2817,7 @@ $(document).ready(function(){
                                     <button class="btn btn-secondary m-r-20 badge-active" type="button"><i aria-hidden="true" class="fa fa-anchor"></i></button> <button class="btn btn-secondary m-r-20" type="button"><i aria-hidden="true" class="fa fa-ship"></i></button> <button class="btn btn-secondary" type="button"><i aria-hidden="true" class="fa fa-cog"></i></button>
                                 </div>
                             </div>
-                            <pre>
-
-                    </pre>
+                            </xmp>
                         </div>
                     </div>
                 </section>
