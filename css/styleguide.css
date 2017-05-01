@@ -96,6 +96,7 @@ xmp {
     -webkit-transition: opacity .25s ease-out;
     -o-transition: opacity .25s ease-out;
     float:left;
+    overflow-x: scroll;
 }
 xmp:hover {
     opacity: 1;
@@ -174,3 +175,17 @@ hr {
     color:#888888;
 }
 
+.styleguide-back {
+    background:#0372BC;
+    padding:8px 0px; 
+}
+.styleguide-back:hover {
+    background:#0067AC;
+}
+.styleguide-back p{
+    color:#fff;
+    font-weight:700;
+    padding:0px;
+    max-width:1600px;
+    margin:0 auto;
+}
