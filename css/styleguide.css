@@ -189,3 +189,17 @@ hr {
     max-width:1600px;
     margin:0 auto;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .sg-side{
+        display: none;
+    }
+    .row{
+        margin-left:-10px !important;
+    }
+    xmp{
+        display:none;
+    }
+}
