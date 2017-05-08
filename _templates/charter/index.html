@@ -72,14 +72,14 @@
         <div class="col-md-3 col-sm-4 charter-sidebar">
             <h3>DECK PLANS</h3>
             <div style="width:100%;height:300px;border:1px solid #D3E0E9;">
-                <div style="height:32px;width:32px;background:#0372BC;position:absolute;right:15px;padding:6px 10px;color:#fff;">
+                <div class="deckplan-expand" data-toggle="modal" data-target="#myModal">
                     <i class="fa fa-arrows-alt" aria-hidden="true"></i>
                </div>
                 <img src="_assets/deckplan_sm.png" style="height:100%;width:100%;object-fit:contain;">
             </div>
         </div>
     </div>
-    <div class="" style="background:black;">
+    <div class="" style="background:black;max-width:1180px;margin:0 auto;">
         <div id="carousel-example-generic" class="carousel slide img-responsive" data-ride="carousel" style="overflow:hidden;max-height:600px;">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -265,6 +265,13 @@
                 <img src="_assets/charter_hero.jpg" style="width:100%;height:100%;object-fit:contain;border-radius:4px;">
             </div>
         </div>
+    </div>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <i class="fa fa-times fa-3x" aria-hidden="true" data-dismiss="modal" style="color:#fff;right:20px;top:20px;position:absolute;cursor:pointer;"></i>
+        <img src="_assets/deckplan.jpg" style="width:100%;height:100%;object-fit:contain;border-radius:4px;padding:30px;">
     </div>
     
     

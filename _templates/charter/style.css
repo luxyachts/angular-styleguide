@@ -23,6 +23,8 @@ body{
     .charter-hero-clear {
         left:auto;
         transform: none;
+        overflow-x:hidden;
+        max-width:100%;
     }
 }
 .charter-hero-image{
@@ -101,7 +103,16 @@ body{
     width:100%;
     object-fit: contain;
 }
-
+.deckplan-expand {
+    height:32px;
+    width:32px;
+    background:#0372BC;
+    position:absolute;
+    right:15px;
+    padding:6px 10px;
+    color:#fff;
+    cursor: pointer;
+}
 
 
 
